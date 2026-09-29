@@ -1,0 +1,159 @@
+{
+  "_comment": "Every source cited by content items. 'accessed' = date someone on the project read the source itself; null means it is known only from search results or another document and MUST be read before any item citing it can be approved.",
+  "sources": [
+    {
+      "id": "lgmdfp",
+      "short": "Ley General en Materia de Desaparición",
+      "title": "Ley General en Materia de Desaparición Forzada de Personas, Desaparición Cometida por Particulares y del Sistema Nacional de Búsqueda de Personas (texto vigente)",
+      "issuer": "Congreso de la Unión (texto compilado por la Cámara de Diputados)",
+      "type": "law",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGMDFP.pdf",
+      "published": "2017-11-17",
+      "last_reform": "2025-07-16",
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "phb-2026",
+      "short": "Protocolo Homologado de Búsqueda (2026)",
+      "title": "Protocolo Homologado para la Búsqueda de Personas Desaparecidas y No Localizadas (actualización aprobada por el Sistema Nacional de Búsqueda el 15 de diciembre de 2025)",
+      "issuer": "Sistema Nacional de Búsqueda de Personas / Diario Oficial de la Federación",
+      "type": "protocol",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5783197&fecha=25/03/2026",
+      "published": "2026-03-25",
+      "last_reform": null,
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "onu-principios-rectores",
+      "short": "Principios Rectores de la ONU para la Búsqueda",
+      "title": "Principios Rectores para la Búsqueda de Personas Desaparecidas (CED/C/7)",
+      "issuer": "Comité contra la Desaparición Forzada, Naciones Unidas",
+      "type": "un_standard",
+      "url": "https://www.cndh.org.mx/sites/default/files/documentos/2019-09/Principios-Rectores-Personas-Desaparecidas-ONU.pdf",
+      "published": "2019",
+      "last_reform": null,
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "idheas-2025",
+      "short": "Guía de IDHEAS (2025)",
+      "title": "¿Qué hacer frente a la desaparición de una persona en México? Una guía sensible para actuar desde el respeto a la dignidad y a la diversidad sexogenérica (2a. ed.)",
+      "issuer": "IDHEAS, Litigio Estratégico en Derechos Humanos A.C. y Casa de las Muñecas Tiresias A.C.",
+      "type": "ngo_guide",
+      "url": "https://www.idheas.org.mx/wp-content/uploads/2025/11/Guia-DesaparicionDiversidadSexogenerica.pdf",
+      "published": "2025-10",
+      "last_reform": null,
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "jalisco-estamos-buscando",
+      "short": "Gobierno de Jalisco: «Estoy buscando»",
+      "title": "Estoy buscando una persona desaparecida",
+      "issuer": "Gobierno del Estado de Jalisco",
+      "type": "official_site",
+      "url": "https://estamosbuscando.jalisco.gob.mx/estoy-buscando-una-persona-desaparecida/",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "jalisco-ley-personas-desaparecidas",
+      "short": "Ley de Personas Desaparecidas de Jalisco",
+      "title": "Ley de Personas Desaparecidas del Estado de Jalisco",
+      "issuer": "Congreso del Estado de Jalisco",
+      "type": "state_law",
+      "url": "https://www.congresojal.gob.mx/boletines/diputados-crean-nueva-ley-de-personas-desaparecidas",
+      "published": "2021",
+      "last_reform": null,
+      "accessed": null
+    },
+    {
+      "id": "jalisco-protocolo-alba",
+      "short": "Protocolo Alba Jalisco",
+      "title": "Protocolo Alba Jalisco",
+      "issuer": "Fiscalía Especial en Personas Desaparecidas, Jalisco",
+      "type": "official_site",
+      "url": "https://fiscaliaenpersonasdesaparecidas.jalisco.gob.mx/protocolo-alba-jalisco/",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "cobupem-sitio",
+      "short": "Sitio de COBUPEM",
+      "title": "Comisión de Búsqueda de Personas del Estado de México (sitio oficial)",
+      "issuer": "Gobierno del Estado de México",
+      "type": "official_site",
+      "url": "https://cobupem.edomex.gob.mx/",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "edomex-ley-desaparicion",
+      "short": "Ley de desaparición del Estado de México",
+      "title": "Ley en materia de Desaparición Forzada de Personas y Desaparición Cometida por Particulares para el Estado Libre y Soberano de México",
+      "issuer": "Legislatura del Estado de México (Gaceta del Gobierno)",
+      "type": "state_law",
+      "url": "https://legislacion.edomex.gob.mx/node/32991",
+      "published": "2019-12-23",
+      "last_reform": "2025-02-14",
+      "accessed": null
+    },
+    {
+      "id": "edomex-protocolo-alba",
+      "short": "Protocolo Alba del Estado de México",
+      "title": "Protocolo Alba (Estado de México)",
+      "issuer": "Fiscalía General de Justicia del Estado de México",
+      "type": "official_site",
+      "url": "https://www.fiscaliaedomex.gob.mx/odisea-y-alerta-amber/protocolo-alba/",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-09-29"
+    },
+    {
+      "id": "cdmx-comision-busqueda",
+      "short": "Comisión de Búsqueda de la CDMX",
+      "title": "¿Cómo reportar a una persona desaparecida? (Comisión de Búsqueda de Personas de la Ciudad de México)",
+      "issuer": "Gobierno de la Ciudad de México",
+      "type": "official_site",
+      "url": "https://comisiondebusqueda.cdmx.gob.mx/servicio",
+      "published": null,
+      "last_reform": null,
+      "accessed": null
+    },
+    {
+      "id": "cdmx-fiscalia-fipede",
+      "short": "Fiscalía Especializada de la CDMX",
+      "title": "Fiscalía Especializada para la Investigación, Persecución de Delitos en Materia de Desaparición Forzada de Personas y la Desaparición Cometida por Particulares y Búsqueda de Personas Desaparecidas (consulta)",
+      "issuer": "Fiscalía General de Justicia de la Ciudad de México",
+      "type": "official_site",
+      "url": "https://www.fgjcdmx.gob.mx/nuestros-servicios/servicios-la-ciudadania/consulta-fipede",
+      "published": null,
+      "last_reform": null,
+      "accessed": null
+    },
+    {
+      "id": "cdmx-ley-busqueda",
+      "short": "Ley de Búsqueda de Personas de la CDMX",
+      "title": "Ley de Búsqueda de Personas de la Ciudad de México",
+      "issuer": "Congreso de la Ciudad de México (Gaceta Oficial de la Ciudad de México)",
+      "type": "state_law",
+      "url": "https://data.consejeria.cdmx.gob.mx/index.php/leyes/leyes/1443-ley-de-busqueda-de-personas-dela-ciudad-de-mexico",
+      "published": "2019-12-31",
+      "last_reform": null,
+      "accessed": null
+    },
+    {
+      "id": "cdmx-protocolo-alba",
+      "short": "Protocolo Alba de la CDMX",
+      "title": "Protocolo Alba para la Ciudad de México",
+      "issuer": "Gobierno de la Ciudad de México (Gaceta Oficial)",
+      "type": "official_site",
+      "url": "https://www.semujeres.cdmx.gob.mx/storage/app/uploads/public/5c9/558/261/5c9558261a6dd480008736.pdf",
+      "published": null,
+      "last_reform": null,
+      "accessed": null
+    }
+  ]
+}

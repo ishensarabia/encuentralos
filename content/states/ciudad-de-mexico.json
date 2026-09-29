@@ -1,0 +1,72 @@
+{
+  "state": {
+    "id": "ciudad-de-mexico",
+    "name": "Ciudad de México",
+    "aliases": ["cdmx","cd mx","df","d f","distrito federal","cd de mexico","iztapalapa","coyoacan","tlalpan","xochimilco","tlahuac","azcapotzalco","gustavo a madero"]
+  },
+  "items": [
+    {
+      "id": "cdmx-comision-busqueda",
+      "kind": "agency",
+      "title": "Comisión de Búsqueda de Personas de la Ciudad de México",
+      "body": "Recibe reportes en persona, por teléfono o por correo, y coordina la búsqueda en la Ciudad de México.",
+      "sources": [
+        { "source": "cdmx-comision-busqueda", "locator": "página «¿Cómo reportar a una persona desaparecida?»", "verification": "unconfirmed" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono", "value": "55 6357 8079", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null },
+        { "kind": "phone", "label": "Teléfono", "value": "55 6357 9282", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null },
+        { "kind": "email", "label": "Correo", "value": "comisionbusquedadepersonas@cdmx.gob.mx", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null },
+        { "kind": "address", "label": "Dirección", "value": "República de Cuba 43, Col. Centro, Alcaldía Cuauhtémoc, Ciudad de México", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Official page reset the connection on 2026-09-29. All data comes from search results; read the page before approving." }
+    },
+    {
+      "id": "cdmx-fiscalia",
+      "kind": "agency",
+      "title": "Fiscalía Especializada en desaparición de personas (FGJCDMX)",
+      "body": "Fiscalía especializada en investigar desapariciones y buscar a personas desaparecidas en la Ciudad de México.",
+      "sources": [
+        { "source": "cdmx-fiscalia-fipede", "locator": "página de consulta", "verification": "unconfirmed" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono (24 horas)", "value": "55 5200 9000", "source": "cdmx-fiscalia-fipede", "locator": "página de consulta", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Known from search results only. Add the address once the official page is read." }
+    },
+    {
+      "id": "cdmx-locatel",
+      "kind": "agency",
+      "title": "Locatel",
+      "body": "También puedes reportar por teléfono a Locatel. Tienen que tomar tu reporte y avisar a las autoridades que buscan.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 113", "verification": "primary" },
+        { "source": "idheas-2025", "locator": "p. 18", "verification": "secondary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Locatel", "value": "55 5658 1111", "source": "idheas-2025", "locator": "p. 18", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "cdmx-ley-estatal",
+      "kind": "note",
+      "title": "Ley local",
+      "body": "En la Ciudad de México también aplica la Ley de Búsqueda de Personas de la Ciudad de México (2019).",
+      "sources": [
+        { "source": "cdmx-ley-busqueda", "locator": "Gaceta Oficial de la Ciudad de México, 31 de diciembre de 2019", "verification": "unconfirmed" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Check for reforms after 2019." }
+    },
+    {
+      "id": "cdmx-protocolo-alba",
+      "kind": "note",
+      "title": "Protocolo Alba",
+      "body": "La Ciudad de México tiene Protocolo Alba para buscar a mujeres, adolescentes y niñas.",
+      "sources": [
+        { "source": "cdmx-protocolo-alba", "locator": "Gaceta Oficial (documento de SEMUJERES)", "verification": "unconfirmed" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Document not read yet; known from search results." }
+    }
+  ]
+}

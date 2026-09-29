@@ -1,0 +1,95 @@
+{
+  "section": {
+    "id": "adn",
+    "title": "Cómo funcionan las muestras de ADN",
+    "intro": "Tu ADN puede ayudar a identificar a tu familiar. Solo se puede usar para buscar e identificar a personas desaparecidas, y siempre necesitan tu permiso por escrito."
+  },
+  "items": [
+    {
+      "id": "adn-que-es",
+      "title": "Para qué sirve",
+      "short": "Para qué sirve",
+      "body": "Se toma una muestra a familiares y se compara con la información genética de personas encontradas que no han sido identificadas. Esa información se guarda en el Banco Nacional de Datos Forenses.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 119", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 106, fracc. II, incisos q, r", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The type of sample (saliva, blood) is not in the law or the PHB. Reviewer: add it if you want it said." }
+    },
+    {
+      "id": "adn-quien-da-muestra",
+      "title": "Quiénes deben dar muestra",
+      "short": "Quiénes dan muestra",
+      "body": "Lo mejor es que den muestra todas las personas de su familia más cercana: madre, padre, hijas, hijos, hermanas y hermanos. Si sus hijas o hijos dan muestra, también debe darla la otra madre o el otro padre de esas hijas o hijos.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "adn-quien-la-toma",
+      "title": "Quién toma la muestra",
+      "short": "Quién toma la muestra",
+      "body": "Normalmente, los servicios periciales de la Fiscalía. Las comisiones de búsqueda también pueden tomar muestras, y la Comisión Nacional de Búsqueda hace campañas para tomarlas sin necesidad de denuncia. Si vives fuera de México, puedes darla en una embajada o consulado.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 53, fracc. XXVI Sexies", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 109 y 400", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Open question: in practice, should families be warned about giving samples twice or to several authorities?" }
+    },
+    {
+      "id": "adn-permiso",
+      "title": "Tu permiso por escrito",
+      "short": "Tu permiso por escrito",
+      "body": "Antes de tomar la muestra te tienen que pedir tu consentimiento por escrito, y explicarte para qué se va a usar tu información.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 123, primer párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 122, primer párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "adn-constancia",
+      "title": "Pide tu constancia",
+      "short": "Pide tu constancia",
+      "body": "Te tienen que dar una constancia de que diste la muestra. En el acta deben quedar el nombre de tu familiar, tu nombre y tu parentesco.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 122, primer párrafo", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "adn-solo-para-identificar",
+      "title": "Solo se puede usar para identificar",
+      "short": "Solo para identificar",
+      "body": "La información genética que das solo se puede usar para buscar e identificar a personas desaparecidas.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 122, segundo párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 108, último párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "adn-perito-independiente",
+      "title": "Puedes llevar a un perito independiente",
+      "short": "Perito independiente",
+      "body": "Si quieres, puedes pedir que un perito independiente certificado esté presente cuando te tomen la muestra. El costo corre por tu cuenta.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 123, primer y tercer párrafos", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Reviewer: is this useful for families in practice, or better left out of the short version?" }
+    },
+    {
+      "id": "adn-muestras-existentes",
+      "title": "Si ya hay muestras o registros",
+      "short": "Muestras ya existentes",
+      "body": "Avisa si sabes que ya existen muestras o registros de tu familiar (por ejemplo, en un hospital), y guarda sus objetos personales. También ayudan sus huellas y sus registros médicos y dentales.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 106, fracc. II, incisos n, r", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 249, inciso c; Anexo 3, necesidades de las familias, punto 5", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The hospital example is mine, not from the source. Open questions: how long results take, and whether families can get a copy of the result." }
+    }
+  ]
+}

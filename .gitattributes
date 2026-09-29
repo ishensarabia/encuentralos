@@ -1,0 +1,7 @@
+# Same line endings on Windows, WSL and Linux, so switching between them never
+# shows every file as changed.
+* text=auto eol=lf
+
+# The contacts sheet is written with CRLF and a BOM so Excel opens accents correctly:
+# leave it byte for byte as generated.
+*.csv -text

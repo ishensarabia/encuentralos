@@ -1,0 +1,89 @@
+{
+  "state": {
+    "id": "jalisco",
+    "name": "Jalisco",
+    "aliases": ["jal","gdl","guadalajara","zapopan","tlaquepaque","tlajomulco","puerto vallarta"]
+  },
+  "items": [
+    {
+      "id": "jal-comision-busqueda",
+      "kind": "agency",
+      "title": "Comisión de Búsqueda de Personas del Estado de Jalisco",
+      "body": "Recibe reportes por teléfono, en línea o en persona. Sus teléfonos atienden las 24 horas, todos los días.",
+      "sources": [
+        { "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono", "value": "33 1514 5422", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": null },
+        { "kind": "phone", "label": "Teléfono", "value": "33 3145 6314", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": null },
+        { "kind": "address", "label": "Dirección", "value": "Calle Libertad 1955, Col. Americana, C.P. 44150, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "jal-fiscalia-especial",
+      "kind": "agency",
+      "title": "Fiscalía Especial en Personas Desaparecidas",
+      "body": "Aquí puedes presentar una denuncia en persona.",
+      "sources": [
+        { "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono (extensiones 12115 y 12116)", "value": "33 3738 6000", "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "confirmed_on": null },
+        { "kind": "address", "label": "Dirección", "value": "Calzada Independencia Norte 778, 2o. piso, Col. La Perla, C.P. 44360, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "jal-ceeav",
+      "kind": "agency",
+      "title": "Comisión Ejecutiva Estatal de Atención a Víctimas (CEEAV)",
+      "body": "Ayuda y atención para las familias.",
+      "sources": [
+        { "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono", "value": "33 1543 8809", "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "confirmed_on": null },
+        { "kind": "address", "label": "Dirección", "value": "Francisco I. Madero 110, esquina Degollado, 3er. piso, Col. Centro, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "jal-ijcf",
+      "kind": "agency",
+      "title": "Instituto Jalisciense de Ciencias Forenses",
+      "body": "Institución forense del estado.",
+      "sources": [
+        { "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono", "value": "33 3030 9400", "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "confirmed_on": null },
+        { "kind": "address", "label": "Dirección", "value": "Batalla de Zacatecas 2395, Fracc. Revolución, C.P. 45580, Tlaquepaque, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Reviewer: what should families know about the IJCF (DNA sampling, identification)? The body is a placeholder." }
+    },
+    {
+      "id": "jal-ley-estatal",
+      "kind": "note",
+      "title": "Ley estatal",
+      "body": "En Jalisco también aplica la Ley de Personas Desaparecidas del Estado de Jalisco, aprobada en 2021.",
+      "sources": [
+        { "source": "jalisco-ley-personas-desaparecidas", "locator": "boletín del Congreso de Jalisco", "verification": "unconfirmed" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Read the published law text and add the official publication date. A reform was being discussed in 2026." }
+    },
+    {
+      "id": "jal-protocolo-alba",
+      "kind": "note",
+      "title": "Protocolo Alba",
+      "body": "Jalisco tiene Protocolo Alba: un mecanismo de búsqueda y localización inmediata de niñas, adolescentes y mujeres denunciadas como desaparecidas.",
+      "sources": [
+        { "source": "jalisco-protocolo-alba", "locator": "página del protocolo", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "email", "label": "Buzón ciudadano de la Fiscalía Especial (correo)", "value": "buzonciudadanofepd.fe@jalisco.gob.mx", "source": "jalisco-protocolo-alba", "locator": "página del protocolo", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The page does not say who can request activation, how, or by which phone. Reviewer: add that if known. The email is the page's only contact and is a citizen mailbox, not an emergency channel, so consider not showing it as the way to activate Alba." }
+    }
+  ]
+}

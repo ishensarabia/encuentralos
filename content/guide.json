@@ -1,0 +1,106 @@
+{
+  "_comment": "Guided questions. Each step shows an existing content item (or a state's items, or a link to a section) when its 'when' conditions match: all listed questions must match, any listed option counts. An unanswered question never hides a step.",
+  "title": "¿Qué hago ahora?",
+  "intro": "Responde unas preguntas y te mostramos los pasos que aplican a tu caso. Puedes saltarte las que no sepas. Tus respuestas no se guardan ni se envían a nadie.",
+  "questions": [
+    { "id": "estado", "text": "¿En qué estado ocurrió?", "options": "states" },
+    {
+      "id": "tiempo",
+      "text": "¿Cuándo supiste de esa persona por última vez?",
+      "options": [
+        { "id": "horas", "label": "Hace menos de un día" },
+        { "id": "dias", "label": "Hace unos días o semanas" },
+        { "id": "meses", "label": "Hace más de tres meses" },
+        { "id": "anios", "label": "Hace más de un año" }
+      ]
+    },
+    {
+      "id": "reportado",
+      "text": "¿Ya reportaste la desaparición?",
+      "options": [
+        { "id": "no", "label": "Todavía no" },
+        { "id": "si", "label": "Sí" },
+        { "id": "rechazado", "label": "Lo intenté, pero no me quisieron recibir" }
+      ]
+    },
+    {
+      "id": "menor",
+      "text": "¿Es menor de 18 años?",
+      "options": [
+        { "id": "si", "label": "Sí" },
+        { "id": "no", "label": "No" },
+        { "id": "no-se", "label": "No sé" }
+      ]
+    },
+    {
+      "id": "mujer",
+      "text": "¿Es mujer, adolescente o niña?",
+      "options": [
+        { "id": "si", "label": "Sí" },
+        { "id": "no", "label": "No" }
+      ]
+    },
+    {
+      "id": "migrante",
+      "text": "¿Es migrante, o estás tú fuera de México?",
+      "options": [
+        { "id": "si", "label": "Sí" },
+        { "id": "no", "label": "No" }
+      ]
+    },
+    {
+      "id": "dinero",
+      "text": "¿Alguien te ha pedido dinero a cambio de su regreso?",
+      "options": [
+        { "id": "si", "label": "Sí" },
+        { "id": "no", "label": "No" }
+      ]
+    },
+    {
+      "id": "autoridad",
+      "text": "¿Crees que participó alguna autoridad (policía, militares u otra)?",
+      "options": [
+        { "id": "si", "label": "Sí" },
+        { "id": "no", "label": "No" },
+        { "id": "no-se", "label": "No sé" }
+      ]
+    },
+    {
+      "id": "amenazas",
+      "text": "¿Tú o tu familia han recibido amenazas?",
+      "options": [
+        { "id": "si", "label": "Sí" },
+        { "id": "no", "label": "No" }
+      ]
+    }
+  ],
+  "steps": [
+    { "item": "si-piden-dinero", "when": { "dinero": ["si"] } },
+    { "item": "si-te-amenazan", "when": { "amenazas": ["si"] } },
+    { "item": "no-esperes", "when": { "tiempo": ["horas", "dias"], "reportado": ["no", "rechazado"] } },
+    { "item": "nunca-es-tarde", "when": { "tiempo": ["meses", "anios"], "reportado": ["no", "rechazado"] } },
+    { "section": "rechazo", "when": { "reportado": ["rechazado"] } },
+    { "item": "no-necesitas-denuncia", "when": { "reportado": ["no", "rechazado"] } },
+    { "state": "agency" },
+    { "item": "donde-reportar", "when": { "reportado": ["no", "rechazado"] } },
+    { "item": "ag-cnb" },
+    { "item": "ninas-ninos-adolescentes", "when": { "menor": ["si", "no-se"] } },
+    { "item": "mujeres-protocolo-alba", "when": { "mujer": ["si"] } },
+    { "item": "fuera-de-mexico", "when": { "migrante": ["si"] } },
+    { "item": "amparo-buscador", "when": { "autoridad": ["si", "no-se"] } },
+    { "item": "pide-folio-y-copia" },
+    { "item": "aunque-falten-datos", "when": { "reportado": ["no", "rechazado"] } },
+    { "item": "lleva-lo-que-tengas", "when": { "reportado": ["no", "rechazado"] } },
+    { "item": "guarda-objetos-personales" },
+    { "item": "anota-todo" },
+    { "item": "entrevista-y-cuestionario", "when": { "reportado": ["si"] } },
+    { "item": "muestras-de-adn" },
+    { "item": "apoyo-a-victimas" },
+    { "item": "participa-en-la-busqueda", "when": { "reportado": ["si"] } },
+    { "item": "revisa-el-expediente", "when": { "reportado": ["si"] } },
+    { "state": "note" },
+    { "item": "declaracion-especial-de-ausencia", "when": { "tiempo": ["meses", "anios"] } },
+    { "item": "la-busqueda-no-se-cierra" }
+  ],
+  "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Reviewer: check the question wording (especially money, threats and authorities) and the order of steps. Urgent-safety steps come first." }
+}

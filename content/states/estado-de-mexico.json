@@ -1,0 +1,61 @@
+{
+  "state": {
+    "id": "estado-de-mexico",
+    "name": "Estado de México",
+    "aliases": ["edomex","edo mex","edo de mexico","mexiquense","toluca","ecatepec","neza","nezahualcoyotl","naucalpan","tlalnepantla"]
+  },
+  "items": [
+    {
+      "id": "mex-cobupem",
+      "kind": "agency",
+      "title": "Comisión de Búsqueda de Personas del Estado de México (COBUPEM)",
+      "body": "Recibe reportes y coordina la búsqueda en el Estado de México.",
+      "sources": [
+        { "source": "cobupem-sitio", "locator": "página de inicio", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 216 0361", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": null },
+        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 509 0927", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": null },
+        { "kind": "address", "label": "Dirección", "value": "Paseo de los Matlazincas 660, Col. La Teresona, C.P. 50040, Toluca de Lerdo, Estado de México", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Search results say COBUPEM has a 24-hour line; confirm whether these 800 numbers are the 24-hour line before saying so." }
+    },
+    {
+      "id": "mex-fiscalia",
+      "kind": "agency",
+      "title": "Fiscalía General de Justicia del Estado de México",
+      "body": "Aquí puedes presentar un reporte o una denuncia ante el Ministerio Público.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 81, fracc. III", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "address", "label": "Dirección (Fiscalía del Estado de México)", "value": "José María Morelos oriente 1300, Colonia San Sebastián", "source": "edomex-protocolo-alba", "locator": "pie de página del sitio de la Fiscalía", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The address appears in the footer of the Fiscalía's Protocolo Alba page without a city, so the city must be confirmed. Still missing: the name, address and phone of the specialized disappearance unit." }
+    },
+    {
+      "id": "mex-ley-estatal",
+      "kind": "note",
+      "title": "Ley estatal",
+      "body": "En el Estado de México también aplica la Ley en materia de Desaparición Forzada de Personas y Desaparición Cometida por Particulares para el Estado Libre y Soberano de México (2019).",
+      "sources": [
+        { "source": "edomex-ley-desaparicion", "locator": "ficha en el portal de legislación", "verification": "unconfirmed" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Portal refused connection on 2026-09-29; dates (2019-12-23, last reform 2025-02-14) come from search results. The state also has a separate Declaración Especial de Ausencia law; add it once read." }
+    },
+    {
+      "id": "mex-protocolo-alba",
+      "kind": "note",
+      "title": "Protocolo Alba",
+      "body": "El Estado de México tiene Protocolo Alba, cuyo objetivo es la búsqueda con vida de mujeres, niñas, niños y adolescentes reportados como desaparecidos. Si sabes de una desaparición, la autoridad que se entere debe avisar sin demora a quienes buscan.",
+      "sources": [
+        { "source": "edomex-protocolo-alba", "locator": "página del protocolo", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Emergencias", "value": "911", "source": "edomex-protocolo-alba", "locator": "página del protocolo", "confirmed_on": null },
+        { "kind": "phone", "label": "Alerta AMBER, Estado de México (teléfono gratuito)", "value": "800 89 029 40", "source": "edomex-protocolo-alba", "locator": "página del protocolo", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The page lists 911 and 800 89 029 40 mainly for Alerta AMBER and gives no separate Alba activation line. The page says it is a portal development version dated 2023-10-17, so ask whether it is current. Confirm the 800 number's format before adding it to a tel: link." }
+    }
+  ]
+}

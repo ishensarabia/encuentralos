@@ -1,0 +1,330 @@
+{
+  "section": {
+    "id": "checklist",
+    "title": "Qué hacer, paso a paso"
+  },
+  "items": [
+    {
+      "id": "no-esperes",
+      "phase": "ahora",
+      "title": "No tienes que esperar para reportar",
+      "short": "No hay que esperar",
+      "body": "No hay que esperar 24, 48 ni 72 horas. Eso es un mito. La ley prohíbe poner plazos de espera y obliga a las autoridades a empezar a buscar de inmediato. Reporta en cuanto sepas que no puedes localizar a tu familiar.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 80, último párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 89, primer párrafo", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 161", "verification": "primary" },
+        { "source": "onu-principios-rectores", "locator": "Principio 6.3", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "no-necesitas-denuncia",
+      "phase": "ahora",
+      "title": "No necesitas poner una denuncia para que empiecen a buscar",
+      "short": "No necesitas denuncia",
+      "body": "Con un reporte basta. La Comisión de Búsqueda tiene que empezar a buscar de inmediato y avisar a la Fiscalía. La Fiscalía, a su vez, tiene que abrir una carpeta de investigación en cuanto se entera, aunque tú no hayas puesto una denuncia.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 89, primer párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 80, penúltimo párrafo (adicionado DOF 16-07-2025)", "verification": "primary" },
+        { "source": "onu-principios-rectores", "locator": "Principio 6.2", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Key message. Wording must be agreed with the reviewer: since the 2025 reform, a report also triggers an investigation (see research doc, finding 4)." }
+    },
+    {
+      "id": "cualquiera-puede-reportar",
+      "phase": "ahora",
+      "title": "Cualquier persona puede reportar, a cualquier hora",
+      "short": "Quién puede reportar",
+      "body": "No tienes que ser familiar. Se puede reportar las 24 horas, todos los días del año, y también sin dar tu nombre.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 80 (reporte anónimo)", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 81, primer párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "donde-reportar",
+      "phase": "ahora",
+      "title": "Dónde reportar",
+      "short": "Dónde reportar",
+      "body": "Puedes reportar en cualquiera de estos lugares, y todos deben recibirte:",
+      "list": [
+        "La Comisión de Búsqueda de tu estado.",
+        "La Comisión Nacional de Búsqueda (por teléfono, WhatsApp o internet).",
+        "El Ministerio Público (Fiscalía).",
+        "El 911 o Locatel.",
+        "Si vives lejos y no hay otra opción: la policía o la autoridad municipal."
+      ],
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 81, fracc. I a V y último párrafo", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 113 (911 y Locatel deben recibir reportes)", "verification": "primary" },
+        { "source": "idheas-2025", "locator": "pp. 17–18", "verification": "secondary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "IDHEAS recommends reporting to both the national and state commission. Should we say so?" }
+    },
+    {
+      "id": "si-paso-en-otro-estado",
+      "phase": "ahora",
+      "title": "Si vives en un estado y desapareció en otro",
+      "short": "Ocurrió en otro estado",
+      "body": "Reporta donde puedas. Si la autoridad que te atiende no es la que debe buscar, tiene que pasar tu reporte a la autoridad correcta y decirte a quién lo mandó y cómo contactarla.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 146", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 86", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Important for the Estado de México / CDMX metro area." }
+    },
+    {
+      "id": "pide-folio-y-copia",
+      "phase": "ahora",
+      "title": "Pide tu folio y una copia de tu reporte",
+      "short": "Pide tu folio y copia",
+      "body": "Cuando reportes, te tienen que dar un número de folio (Folio Único de Búsqueda) y una copia de tu reporte o denuncia. Guárdalos: los vas a necesitar.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 81, último párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 85, último párrafo", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 154", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "pide-cartilla-de-derechos",
+      "phase": "ahora",
+      "title": "Pide la Cartilla de Derechos",
+      "short": "Cartilla de Derechos",
+      "body": "Si eres familiar, la autoridad te tiene que entregar la Cartilla de Derechos de las familias de personas desaparecidas.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 155 y Anexo 2", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "aunque-falten-datos",
+      "phase": "ahora",
+      "title": "Aunque te falten datos, te tienen que atender",
+      "short": "Aunque falten datos",
+      "body": "Si no tienes toda la información, o no quieres dar algún dato por miedo, igual deben tomar tu reporte y empezar a buscar. No pueden pedirte la CURP como requisito.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 85, fracc. I Bis y penúltimo párrafo", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 152", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "lleva-lo-que-tengas",
+      "phase": "ahora",
+      "title": "Lleva o envía lo que tengas",
+      "short": "Lleva lo que tengas",
+      "body": "Fotos, documentos y cualquier dato ayudan. La autoridad debe recibirlos, también por correo o por teléfono. Revisa la lista de «Qué información reunir».",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150 y 153", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "ninas-ninos-adolescentes",
+      "phase": "ahora",
+      "title": "Si es una niña, un niño o un adolescente",
+      "short": "Menores de 18 años",
+      "body": "Siempre se abre una carpeta de investigación y la búsqueda especializada empieza de inmediato. La Alerta Amber es una de las herramientas para buscar a menores de 18 años.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 7", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 48, fracc. VI", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "mujeres-protocolo-alba",
+      "phase": "ahora",
+      "title": "Si es una mujer o una niña",
+      "short": "Mujeres: Protocolo Alba",
+      "body": "En muchos estados existe el Protocolo Alba para buscar de inmediato a mujeres, adolescentes y niñas. Pregunta a la autoridad si ya lo activaron.",
+      "sources": [
+        { "source": "idheas-2025", "locator": "pp. 15–16", "verification": "secondary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "It varies by state; each state file has its own note." }
+    },
+    {
+      "id": "si-piden-dinero",
+      "phase": "ahora",
+      "title": "Si alguien te llama pidiendo dinero",
+      "short": "Si piden dinero",
+      "body": "Díselo a la autoridad que recibe tu reporte. El caso debe pasar a la unidad especializada en secuestro o extorsión, y lo primero es proteger la vida de tu familiar.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 159", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "SENSITIVE. The reviewer should add practical safety advice (what to do during the call, whether to pay). I have no source for that." }
+    },
+    {
+      "id": "amparo-buscador",
+      "phase": "ahora",
+      "title": "Si crees que participó alguna autoridad: el amparo buscador",
+      "short": "Amparo buscador",
+      "body": "Puedes pedir a un juez federal que ordene buscar a tu familiar. Se puede pedir cualquier día y a cualquier hora, en persona, por teléfono o por internet, y también de palabra, sin escrito. El juez tiene 24 horas para actuar.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 104 (cita el art. 15 de la Ley de Amparo)", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 157", "verification": "primary" },
+        { "source": "idheas-2025", "locator": "pp. 49–50", "verification": "secondary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Should this appear on the first screen or later? (open question 6)" }
+    },
+    {
+      "id": "guarda-objetos-personales",
+      "phase": "ahora",
+      "title": "Guarda sus objetos personales",
+      "short": "Guarda sus objetos",
+      "body": "Guarda su cepillo de dientes, su peine u otros objetos personales, y cosas en las que puedan haber quedado sus huellas. Pueden servir para identificarle.",
+      "sources": [
+        { "source": "phb-2026", "locator": "Anexo 3, necesidades de las familias, punto 5", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Should we add how to store them (e.g. a paper bag)? I have no source for that." }
+    },
+    {
+      "id": "anota-todo",
+      "phase": "ahora",
+      "title": "Anota todo en una libreta",
+      "short": "Anota todo",
+      "body": "Apunta tu folio, el número de carpeta, las fechas, y los nombres y teléfonos de cada persona que te atiende.",
+      "sources": [
+        { "source": "idheas-2025", "locator": "p. 19", "verification": "secondary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "fuera-de-mexico",
+      "phase": "ahora",
+      "title": "Si tu familiar es migrante o tú estás fuera de México",
+      "short": "Fuera de México",
+      "body": "Puedes reportar en cualquier consulado o embajada de México. Deben mandar tu reporte a la Comisión Nacional de Búsqueda.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 81, fracc. IV", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 84", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 158", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "entrevista-y-cuestionario",
+      "phase": "primeros-dias",
+      "title": "La entrevista y el cuestionario",
+      "short": "La entrevista",
+      "body": "La Comisión de Búsqueda y la Fiscalía te harán una entrevista y un cuestionario con datos de tu familiar (se llama cuestionario Ante Mortem). Puedes pedir pausas, que te repitan las preguntas o corregir lo que dijiste.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 91", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 249, inciso c; Anexo 3", "verification": "primary" },
+        { "source": "idheas-2025", "locator": "pp. 41–43", "verification": "secondary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "ficha-de-busqueda",
+      "phase": "primeros-dias",
+      "title": "La ficha de búsqueda",
+      "short": "Ficha de búsqueda",
+      "body": "Con tu reporte se hace una ficha de búsqueda con la foto y los datos de tu familiar. Se activa una alerta nacional, y la ficha se difunde en medios, terminales de transporte, carreteras y corporaciones de seguridad.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 12 Duodecies", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 145 Bis a 145 Quater", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The reviewer may want to add advice on sharing the poster on social media." }
+    },
+    {
+      "id": "participa-en-la-busqueda",
+      "phase": "primeros-dias",
+      "title": "Tienes derecho a participar",
+      "short": "Tu derecho a participar",
+      "body": "Puedes acompañar las acciones de búsqueda, recibir información a tiempo y proponer acciones. Si la autoridad no acepta lo que propones, te lo tiene que explicar por escrito.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 138, fracc. I y II", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "revisa-el-expediente",
+      "phase": "primeros-dias",
+      "title": "Puedes ver el expediente y pedir copias gratis",
+      "short": "Ver el expediente",
+      "body": "Tú o quien te represente pueden revisar los expedientes de búsqueda y de investigación, y pedir copias sin costo.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 87, último párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 138, fracc. III y IV", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Art. 138 fr. IV says free copies of the search file; confirm whether this also covers the investigation file." }
+    },
+    {
+      "id": "muestras-de-adn",
+      "phase": "primeros-dias",
+      "title": "Las muestras de ADN",
+      "short": "Muestras de ADN",
+      "body": "Te pueden pedir una muestra de ADN a ti y a otros familiares para ayudar a identificar a tu familiar. Siempre tienen que pedirte tu permiso por escrito. Revisa la sección «Cómo funcionan las muestras de ADN».",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 123", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "apoyo-a-victimas",
+      "phase": "primeros-dias",
+      "title": "Tienes derecho a apoyo desde el primer día",
+      "short": "Apoyo desde el día uno",
+      "body": "Desde que reportas, puedes pedir ayuda y atención, incluida la psicológica, a la Comisión Ejecutiva de Atención a Víctimas o a la comisión de víctimas de tu estado. Te la deben dar de inmediato. La Comisión de Búsqueda te debe informar cómo acceder.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 90, segundo párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "arts. 136, 139 y 140", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 138, fracc. V", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "si-te-amenazan",
+      "phase": "primeros-dias",
+      "title": "Si tú o tu familia están en peligro",
+      "short": "Si hay amenazas",
+      "body": "Si recibes amenazas o crees que alguien de tu familia corre peligro, díselo a la autoridad. El Ministerio Público debe valorar medidas para protegerles.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 160", "verification": "primary" },
+        { "source": "onu-principios-rectores", "locator": "Principio 14", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "SENSITIVE. The reviewer should add practical safety advice." }
+    },
+    {
+      "id": "la-busqueda-no-se-cierra",
+      "phase": "semanas-y-meses",
+      "title": "La búsqueda no se cierra",
+      "short": "Búsqueda permanente",
+      "body": "La búsqueda tiene que continuar hasta saber qué le pasó a tu familiar y dónde está.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 79", "verification": "primary" },
+        { "source": "onu-principios-rectores", "locator": "Principio 7", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "nunca-es-tarde",
+      "phase": "semanas-y-meses",
+      "title": "Nunca es tarde para reportar",
+      "short": "Nunca es tarde",
+      "body": "Puedes reportar aunque hayan pasado meses o años. Si pasó más de un año, la búsqueda sigue con otros métodos y la Fiscalía debe abrir una carpeta de investigación.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 161 y 162", "verification": "primary" },
+        { "source": "idheas-2025", "locator": "p. 19", "verification": "secondary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "declaracion-especial-de-ausencia",
+      "phase": "semanas-y-meses",
+      "title": "La Declaración Especial de Ausencia",
+      "short": "Declaración de Ausencia",
+      "body": "Es un trámite ante un juez civil que protege los derechos de tu familiar y de tu familia. Sirve, por ejemplo, para proteger a sus hijas e hijos menores de edad, cuidar sus bienes (incluso los que tienen crédito o hipoteca) y que su familia siga recibiendo la seguridad social de su trabajo. Es voluntario y gratuito. Se puede pedir a partir de los 3 meses del reporte, y el juez debe resolver en un máximo de 6 meses. No detiene la búsqueda ni la investigación.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "arts. 142, 144 y 145", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 146, fracc. I, III y V", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "arts. 147 y 148", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Examples chosen from the nine effects in art. 146; confirm they are the right ones to highlight. The state procedure is set by state law." }
+    }
+  ]
+}

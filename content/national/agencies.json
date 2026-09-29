@@ -1,0 +1,105 @@
+{
+  "section": {
+    "id": "instituciones",
+    "title": "¿Quién hace qué?"
+  },
+  "items": [
+    {
+      "id": "ag-comision-local",
+      "title": "Comisión de Búsqueda de tu estado",
+      "short": "Comisión de tu estado",
+      "body": "Busca a tu familiar, recibe reportes, registra el caso y te da tu folio. Suele ser la que puede salir a buscar más rápido en tu estado.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "arts. 79, 81, 87 y 89", "verification": "primary" },
+        { "source": "idheas-2025", "locator": "p. 18", "verification": "secondary" }
+      ],
+      "contacts": [],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Contact data lives in each state file." }
+    },
+    {
+      "id": "ag-cnb",
+      "title": "Comisión Nacional de Búsqueda (CNB)",
+      "short": "Comisión Nacional (CNB)",
+      "body": "Coordina la búsqueda en todo el país, lleva el Registro Nacional de Personas Desaparecidas, activa la alerta nacional y recibe reportes por teléfono, WhatsApp e internet.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "arts. 53, 81, 87 y 89", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 12 Duodecies", "verification": "primary" }
+      ],
+      "contacts": [
+        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 028 77 83", "source": "idheas-2025", "locator": "p. 17", "confirmed_on": null },
+        { "kind": "whatsapp", "label": "WhatsApp", "value": "55 1309 9024", "source": "idheas-2025", "locator": "p. 17", "confirmed_on": null },
+        { "kind": "web", "label": "Reporte por internet", "value": "https://cnbreportadesaparecidos.segob.gob.mx", "source": "idheas-2025", "locator": "p. 18", "confirmed_on": null }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "CNB's own report page returned 404 on 2026-09-29. The international number is left out because sources disagree." }
+    },
+    {
+      "id": "ag-fiscalia",
+      "title": "Fiscalía (Ministerio Público)",
+      "short": "Fiscalía",
+      "body": "Investiga el delito. Tiene que abrir una carpeta de investigación de inmediato en cuanto sabe de una desaparición. Cada estado tiene una fiscalía especializada; la Fiscalía General de la República atiende los casos federales.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "arts. 70, 80 y 88", "verification": "primary" }
+      ],
+      "contacts": [],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "ag-servicios-periciales",
+      "title": "Servicios periciales e institutos forenses",
+      "short": "Servicios forenses",
+      "body": "Toman las muestras de ADN y trabajan para identificar a personas encontradas.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "arts. 119 a 123", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 109 y 400", "verification": "primary" }
+      ],
+      "contacts": [],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Should the Centro Nacional de Identificación Humana be named? Its role after the 2025 reform is unconfirmed." }
+    },
+    {
+      "id": "ag-atencion-victimas",
+      "title": "Comisión de Atención a Víctimas (nacional o de tu estado)",
+      "short": "Atención a Víctimas",
+      "body": "Da ayuda inmediata, atención psicológica y asesoría jurídica a las familias. También puede cubrir los gastos de la Declaración Especial de Ausencia.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "arts. 136, 139 y 140", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 144, cuarto párrafo", "verification": "primary" }
+      ],
+      "contacts": [],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Legal aid (asesoría jurídica) comes from the Ley General de Víctimas, which I have not read yet. Add it as a source or remove the phrase." }
+    },
+    {
+      "id": "ag-juzgados",
+      "title": "Juzgados federales (amparo buscador)",
+      "short": "Juzgados (amparo)",
+      "body": "Si crees que participó una autoridad, un juez federal puede ordenar que busquen a tu familiar.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 104", "verification": "primary" }
+      ],
+      "contacts": [],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "ag-derechos-humanos",
+      "title": "Comisiones de derechos humanos",
+      "short": "Derechos humanos",
+      "body": "Puedes presentar una queja ante la Comisión Nacional de los Derechos Humanos o la de tu estado. La queja también cuenta para pedir la Declaración Especial de Ausencia.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 144, tercer párrafo", "verification": "primary" }
+      ],
+      "contacts": [],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "ag-consulados",
+      "title": "Consulados y embajadas de México",
+      "short": "Consulados y embajadas",
+      "body": "Reciben reportes de personas que están fuera de México y pueden tomar muestras de ADN a familiares en el extranjero.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "arts. 81, fracc. IV y 84", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 109", "verification": "primary" }
+      ],
+      "contacts": [],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "section": {
+    "id": "rechazo",
+    "title": "Si no te quieren recibir",
+    "intro": "Muestra esta página a quien te atienda o imprímela. Las citas son textuales de la Ley General en Materia de Desaparición."
+  },
+  "items": [
+    {
+      "id": "rch-sin-espera",
+      "title": "No te pueden pedir que esperes",
+      "short": "No hay plazo de espera",
+      "body": "La ley prohíbe los plazos de espera, como las famosas 72 horas.",
+      "quote": { "text": "Ningún protocolo establecerá plazos de espera para iniciar la investigación.", "source": "lgmdfp", "locator": "art. 80, último párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 80, último párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-sin-denuncia",
+      "title": "No te pueden exigir una denuncia para buscar",
+      "short": "Sin denuncia previa",
+      "body": "Con tu reporte, la Comisión de Búsqueda tiene que empezar a buscar de inmediato.",
+      "quote": { "text": "Cuando la Comisión Nacional de Búsqueda o la Comisión Local de Búsqueda correspondiente tenga Noticia o Reporte de una Persona Desaparecida o No Localizada, iniciará la búsqueda de inmediato e informará sin dilación a la fiscalía competente.", "source": "lgmdfp", "locator": "art. 89, primer párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 89, primer párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-deben-actuar",
+      "title": "Quien recibe tu reporte tiene que actuar de inmediato",
+      "short": "Deben actuar ya",
+      "body": "Cualquier autoridad que reciba tu reporte debe empezar las acciones de búsqueda que le tocan.",
+      "quote": { "text": "Las autoridades que reciban la Denuncia, el Reporte o Noticia deberán implementar, inmediatamente, las acciones de búsqueda que les correspondan, de conformidad con lo dispuesto en el protocolo correspondiente.", "source": "lgmdfp", "locator": "art. 86, segundo párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 86", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-carpeta",
+      "title": "La Fiscalía tiene que abrir una carpeta de investigación",
+      "short": "Carpeta de investigación",
+      "body": "Pide el número de carpeta y anótalo.",
+      "quote": { "text": "La autoridad que reciba una Noticia, Reporte o denuncia deberá informar inmediatamente a la Fiscalía Especializada competente, la que iniciará sin dilación alguna la investigación y asignará el número de carpeta correspondiente.", "source": "lgmdfp", "locator": "art. 80, cuarto párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 80, cuarto párrafo (adicionado DOF 16-07-2025)", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-sin-curp",
+      "title": "No te pueden exigir la CURP",
+      "short": "No exigen la CURP",
+      "body": "Pueden pedirla, pero no pueden negarse a buscar si no la tienes.",
+      "quote": { "text": "La Clave Única de Registro de Población de la Persona Desaparecida o No Localizada. No podrá condicionarse el procedimiento de búsqueda a la presentación de este requisito;", "source": "lgmdfp", "locator": "art. 85, fracción I Bis" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 85, fracc. I Bis", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-datos-incompletos",
+      "title": "Aunque no tengas todos los datos",
+      "short": "Aunque falten datos",
+      "body": "Si no tienes algún dato, o no lo quieres dar por miedo, igual deben empezar a buscar.",
+      "quote": { "text": "La objeción de señalar datos por temor o imposibilidad de aportarlos por parte de quien haga la Denuncia o Reporte, no será obstáculo para el inicio de la búsqueda inmediata por parte de la Comisión Nacional de Búsqueda.", "source": "lgmdfp", "locator": "art. 85, penúltimo párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 85, penúltimo párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-copia-y-nombre",
+      "title": "Te deben dar una copia y decir quién te atendió",
+      "short": "Copia y nombre",
+      "body": "Quien recibe tu reporte debe anotar su nombre, su cargo y su oficina, y darte una copia.",
+      "quote": { "text": "La autoridad que recabe la información, documentos y elementos a que se refiere el presente artículo deberá asentar su nombre, cargo y dependencia gubernamental a la que se encuentre adscrito al momento de recibir el Reporte o Denuncia. La autoridad estará obligada a entregar una copia del Reporte o Denuncia a la persona que haya acudido a realizarla.", "source": "lgmdfp", "locator": "art. 85, último párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 85, último párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-folio",
+      "title": "Te deben dar tu folio",
+      "short": "Te deben dar tu folio",
+      "body": "Si reportas por teléfono o en persona, te tienen que dar el Folio Único de Búsqueda.",
+      "quote": { "text": "En el caso de Reportes realizados en términos de la fracción I de este artículo, la autoridad que reciba el reporte deberá proporcionar el folio único de búsqueda a la persona que lo realizó. En el caso de la fracción III, quien reciba el Reporte deberá entregar a la persona que lo realizó constancia por escrito en el que constará el folio único de búsqueda.", "source": "lgmdfp", "locator": "art. 81, último párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 81, último párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-menores",
+      "title": "Si es una niña, un niño o un adolescente",
+      "short": "Si es menor de edad",
+      "body": "Siempre se abre carpeta y la búsqueda especializada empieza de inmediato.",
+      "quote": { "text": "Las niñas, niños y adolescentes respecto de los cuales haya Noticia, Reporte o Denuncia que han desaparecido en cualquier circunstancia, se iniciará carpeta de investigación en todos los casos y se emprenderá la búsqueda especializada de manera inmediata y diferenciada, de conformidad con el protocolo especializado en búsqueda de personas menores de 18 años de edad que corresponda.", "source": "lgmdfp", "locator": "art. 7" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 7", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "rch-sanciones",
+      "title": "Negarse puede tener sanciones",
+      "short": "Sanciones por negarse",
+      "body": "Si una autoridad no inicia la investigación o el reporte, puede ser sancionada.",
+      "quote": { "text": "La omisión de iniciar la investigación correspondiente y/o de iniciar el reporte de desaparición pertinente, se sancionará de acuerdo con las disposiciones de esta Ley.", "source": "lgmdfp", "locator": "art. 80, cuarto párrafo" },
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 80, cuarto párrafo", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 86, tercer párrafo", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "SENSITIVE: reviewer should decide whether mentioning sanctions helps or escalates conflict at the counter." }
+    },
+    {
+      "id": "rch-si-aun-asi",
+      "title": "Si aun así no te atienden",
+      "body": "Reporta por otro medio: la Comisión Nacional de Búsqueda por teléfono o WhatsApp, o el 911. Anota el nombre de quien no te atendió, la hora y el lugar. Si crees que participó una autoridad, también puedes pedir un amparo buscador.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 81", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 104 y 113", "verification": "primary" },
+        { "source": "idheas-2025", "locator": "pp. 17–19", "verification": "secondary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Advice to write down the official's name is mine (based on art. 85's duty to record it). Reviewer: add a human-rights commission complaint?" }
+    }
+  ]
+}

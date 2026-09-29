@@ -1,0 +1,18 @@
+{
+  "name": "encuentralos",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Guía gratuita para familias en las primeras horas y días después de una desaparición en México.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "contacts-sheet": "node scripts/contacts-sheet.mjs",
+    "bot:transcript": "node scripts/bot-transcript.mjs",
+    "build": "node scripts/build.mjs --mode preview",
+    "build:public": "node scripts/build.mjs --mode public",
+    "test": "node --test"
+  }
+}

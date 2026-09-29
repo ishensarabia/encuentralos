@@ -1,0 +1,103 @@
+{
+  "section": {
+    "id": "documentos",
+    "title": "Qué información reunir",
+    "intro": "Lleva lo que tengas. Si te falta algo, igual te tienen que atender."
+  },
+  "items": [
+    {
+      "id": "doc-identidad",
+      "title": "Sus datos",
+      "short": "Sus datos",
+      "body": "Nombre completo (y nombre social, si usa otro), fecha de nacimiento y edad, y si tienes: CURP, credencial de elector u otra identificación.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, incisos a, b, i", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 106, fracc. II, incisos h, i", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The CURP is optional (see checklist item aunque-falten-datos)." }
+    },
+    {
+      "id": "doc-fotos",
+      "title": "Fotos recientes",
+      "short": "Fotos recientes",
+      "body": "Varias fotos recientes. Si puedes, incluye una donde esté sonriendo: los dientes ayudan a reconocerle.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, inciso e", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "doc-senas-y-ropa",
+      "title": "Cómo es y cómo iba vestida",
+      "short": "Señas y ropa",
+      "body": "Señas particulares con todo detalle: lunares, tatuajes, cicatrices, perforaciones. La ropa que llevaba la última vez que supiste de esa persona y la que suele usar.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, incisos f, h", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "doc-ultimo-contacto",
+      "title": "La última vez que supiste de esa persona",
+      "short": "Último contacto",
+      "body": "Cuándo, dónde, cómo y con quién fue el último contacto.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, inciso g", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 85, fracc. V", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "doc-telefono-y-redes",
+      "title": "Teléfono, correo y redes",
+      "short": "Teléfono y redes",
+      "body": "Su número de celular y la compañía, sus correos, sus redes sociales y las aplicaciones que usa (de transporte, mapas, citas, juegos).",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, incisos m, n, o", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "doc-rutinas",
+      "title": "Su rutina",
+      "short": "Su rutina",
+      "body": "Dónde vive, trabaja o estudia, los lugares a los que va, sus horarios y las personas con las que suele estar.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, incisos c, d", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "doc-salud",
+      "title": "Su salud",
+      "short": "Su salud",
+      "body": "Enfermedades, discapacidades y medicinas que toma. Si puedes, datos de su dentista o médico, radiografías u otros estudios.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, incisos p, q", "verification": "primary" },
+        { "source": "lgmdfp", "locator": "art. 106, fracc. II, inciso n", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Inciso q (substance use) is left out of the copy on purpose; the reviewer should decide whether to mention it." }
+    },
+    {
+      "id": "doc-pistas",
+      "title": "Lo que sabes o sospechas",
+      "short": "Lo que sospechas",
+      "body": "Dónde crees que podría estar, con quién, y quién podría saber algo. Vehículos relacionados (color, placas, marca, modelo). Amenazas o hechos de violencia anteriores, y si han desaparecido otras personas cercanas.",
+      "sources": [
+        { "source": "phb-2026", "locator": "párr. 150, incisos r a y", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    },
+    {
+      "id": "doc-familiares-adn",
+      "title": "Quiénes podrían dar una muestra de ADN",
+      "short": "Familiares para ADN",
+      "body": "Anota los datos de su madre, padre, hijas, hijos, hermanas y hermanos.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 106, fracc. II, inciso p", "verification": "primary" },
+        { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
+      ],
+      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+    }
+  ]
+}
