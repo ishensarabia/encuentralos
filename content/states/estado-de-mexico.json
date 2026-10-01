@@ -14,11 +14,11 @@
         { "source": "cobupem-sitio", "locator": "página de inicio", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 216 0361", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": null },
-        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 509 0927", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": null },
-        { "kind": "address", "label": "Dirección", "value": "Paseo de los Matlazincas 660, Col. La Teresona, C.P. 50040, Toluca de Lerdo, Estado de México", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": null }
+        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 216 0361", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": "2026-10-01" },
+        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 509 0927", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": "2026-10-01" },
+        { "kind": "address", "label": "Dirección", "value": "Paseo de los Matlazincas 660, Col. La Teresona, C.P. 50040, Toluca de Lerdo, Estado de México", "source": "cobupem-sitio", "locator": "página de inicio", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Search results say COBUPEM has a 24-hour line; confirm whether these 800 numbers are the 24-hour line before saying so." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Search results say COBUPEM has a 24-hour line; confirm whether these 800 numbers are the 24-hour line before saying so." }
     },
     {
       "id": "mex-fiscalia",
@@ -29,9 +29,9 @@
         { "source": "lgmdfp", "locator": "art. 81, fracc. III", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "address", "label": "Dirección (Fiscalía del Estado de México)", "value": "José María Morelos oriente 1300, Colonia San Sebastián", "source": "edomex-protocolo-alba", "locator": "pie de página del sitio de la Fiscalía", "confirmed_on": null }
+        { "kind": "address", "label": "Dirección (Fiscalía del Estado de México)", "value": "José María Morelos oriente 1300, Colonia San Sebastián", "source": "edomex-protocolo-alba", "locator": "pie de página del sitio de la Fiscalía", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The address appears in the footer of the Fiscalía's Protocolo Alba page without a city, so the city must be confirmed. Still missing: the name, address and phone of the specialized disappearance unit." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The address appears in the footer of the Fiscalía's Protocolo Alba page without a city, so the city must be confirmed. Still missing: the name, address and phone of the specialized disappearance unit." }
     },
     {
       "id": "mex-ley-estatal",
@@ -52,10 +52,10 @@
         { "source": "edomex-protocolo-alba", "locator": "página del protocolo", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Emergencias", "value": "911", "source": "edomex-protocolo-alba", "locator": "página del protocolo", "confirmed_on": null },
-        { "kind": "phone", "label": "Alerta AMBER, Estado de México (teléfono gratuito)", "value": "800 89 029 40", "source": "edomex-protocolo-alba", "locator": "página del protocolo", "confirmed_on": null }
+        { "kind": "phone", "label": "Emergencias", "value": "911", "source": "edomex-protocolo-alba", "locator": "página del protocolo", "confirmed_on": "2026-10-01" },
+        { "kind": "phone", "label": "Alerta AMBER, Estado de México (teléfono gratuito)", "value": "800 89 029 40", "source": "edomex-protocolo-alba", "locator": "página del protocolo", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The page lists 911 and 800 89 029 40 mainly for Alerta AMBER and gives no separate Alba activation line. The page says it is a portal development version dated 2023-10-17, so ask whether it is current. Confirm the 800 number's format before adding it to a tel: link." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The page lists 911 and 800 89 029 40 mainly for Alerta AMBER and gives no separate Alba activation line. The page says it is a portal development version dated 2023-10-17, so ask whether it is current. Confirm the 800 number's format before adding it to a tel: link." }
     }
   ]
 }

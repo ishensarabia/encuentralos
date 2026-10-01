@@ -36,7 +36,7 @@ export function itemBlocks(item, { sourcesById, mode }) {
   const cited = sourcesLine(item, sourcesById);
   const quoteCite = item.quote ? `Fuente: ${sourcesById.get(item.quote.source).short}, ${item.quote.locator}` : null;
   if (cited !== quoteCite) blocks.push(cited); // a quote already carries its own citation
-  if (mode === 'public' && item.review.last_reviewed) blocks.push(`Revisado el ${formatDate(item.review.last_reviewed)}`);
+  if (mode === 'public' && item.review.last_reviewed) blocks.push(`Fuentes verificadas el ${formatDate(item.review.last_reviewed)}`);
   return blocks;
 }
 

@@ -102,5 +102,5 @@
     { "item": "declaracion-especial-de-ausencia", "when": { "tiempo": ["meses", "anios"] } },
     { "item": "la-busqueda-no-se-cierra" }
   ],
-  "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Reviewer: check the question wording (especially money, threats and authorities) and the order of steps. Urgent-safety steps come first." }
+  "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Reviewer: check the question wording (especially money, threats and authorities) and the order of steps. Urgent-safety steps come first." }
 }

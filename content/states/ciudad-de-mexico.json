@@ -11,15 +11,15 @@
       "title": "Comisión de Búsqueda de Personas de la Ciudad de México",
       "body": "Recibe reportes en persona, por teléfono o por correo, y coordina la búsqueda en la Ciudad de México.",
       "sources": [
-        { "source": "cdmx-comision-busqueda", "locator": "página «¿Cómo reportar a una persona desaparecida?»", "verification": "unconfirmed" }
+        { "source": "eluniversal-cdmx-reportar", "locator": "nota completa (actualizada 2023-03-20)", "verification": "secondary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Teléfono", "value": "55 6357 8079", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null },
-        { "kind": "phone", "label": "Teléfono", "value": "55 6357 9282", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null },
-        { "kind": "email", "label": "Correo", "value": "comisionbusquedadepersonas@cdmx.gob.mx", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null },
-        { "kind": "address", "label": "Dirección", "value": "República de Cuba 43, Col. Centro, Alcaldía Cuauhtémoc, Ciudad de México", "source": "cdmx-comision-busqueda", "locator": "página de servicio", "confirmed_on": null }
+        { "kind": "phone", "label": "Teléfono", "value": "55 6357 8079", "source": "eluniversal-cdmx-reportar", "locator": "nota completa", "confirmed_on": "2026-10-01" },
+        { "kind": "phone", "label": "Teléfono", "value": "55 6357 9282", "source": "eluniversal-cdmx-reportar", "locator": "nota completa", "confirmed_on": "2026-10-01" },
+        { "kind": "email", "label": "Correo", "value": "comisionbusquedadepersonas@cdmx.gob.mx", "source": "eluniversal-cdmx-reportar", "locator": "nota completa", "confirmed_on": "2026-10-01" },
+        { "kind": "address", "label": "Dirección", "value": "República de Cuba 43, Col. Centro, Alcaldía Cuauhtémoc, Ciudad de México", "source": "eluniversal-cdmx-reportar", "locator": "nota completa", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Official page reset the connection on 2026-09-29. All data comes from search results; read the page before approving." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The official page (comisiondebusqueda.cdmx.gob.mx) reset the connection on 2026-09-29 and 2026-10-01. Contacts match the El Universal article (2023) and search results. Re-check on the official page when reachable." }
     },
     {
       "id": "cdmx-fiscalia",
@@ -44,9 +44,9 @@
         { "source": "idheas-2025", "locator": "p. 18", "verification": "secondary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Locatel", "value": "55 5658 1111", "source": "idheas-2025", "locator": "p. 18", "confirmed_on": null }
+        { "kind": "phone", "label": "Locatel", "value": "55 5658 1111", "source": "idheas-2025", "locator": "p. 18", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "cdmx-ley-estatal",

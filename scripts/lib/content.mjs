@@ -10,7 +10,7 @@ export const VERIFICATION = ['primary', 'secondary', 'unconfirmed'];
 export const REVIEW_STATUS = ['unreviewed', 'needs_changes', 'approved', 'rejected'];
 export const PHASES = ['ahora', 'primeros-dias', 'semanas-y-meses'];
 export const CONTACT_KINDS = ['phone', 'whatsapp', 'web', 'email', 'address'];
-export const SOURCE_TYPES = ['law', 'state_law', 'protocol', 'un_standard', 'ngo_guide', 'official_site', 'data'];
+export const SOURCE_TYPES = ['law', 'state_law', 'protocol', 'un_standard', 'ngo_guide', 'official_site', 'news', 'data'];
 export const STATE_ITEM_KINDS = ['agency', 'note'];
 
 // Approved contacts older than this get a warning: phone numbers change.

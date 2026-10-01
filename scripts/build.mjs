@@ -10,7 +10,8 @@ import { fileURLToPath } from 'node:url';
 import { loadContent, validateContent, selectPublishable } from './lib/content.mjs';
 import { renderSite } from './lib/render.mjs';
 import { buildAssets } from './lib/offline.mjs';
-import { checkQuotes } from './lib/quotes.mjs';
+import { checkQuotes, checkFundamentos } from './lib/quotes.mjs';
+import { FUNDAMENTOS } from '../site/tools.mjs';
 
 const repo = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -21,6 +22,7 @@ const out = path.resolve(flag('--out', path.join(repo, 'dist', mode)));
 const content = await loadContent(path.join(repo, 'content'));
 const { errors } = validateContent(content);
 errors.push(...(await checkQuotes(content, path.join(repo, 'docs', 'source-texts'))));
+errors.push(...(await checkFundamentos(FUNDAMENTOS, path.join(repo, 'docs', 'source-texts'))));
 if (errors.length) {
   for (const e of errors) console.error(`error    ${e}`);
   console.error(`\nNot built: ${errors.length} content error(s). Run npm run validate for details.`);
@@ -41,10 +43,17 @@ const assets = buildAssets(pages, {
   guideLogic: await read('scripts', 'lib', 'guide-logic.mjs'),
   guideUi: await read('site', 'guide-ui.js'),
   appJs: await read('site', 'app.js'),
+  fichaUi: await read('site', 'ficha-ui.js'),
+  escritosLogic: await read('scripts', 'lib', 'escritos-logic.mjs'),
+  escritosUi: await read('site', 'escritos-ui.js'),
   icon: await read('site', 'icon.svg'),
 });
 // Public site should be findable by families; the preview never.
 assets.set('robots.txt', mode === 'public' ? 'User-agent: *\nAllow: /\n' : 'User-agent: *\nDisallow: /\n');
+
+// Cloudflare Pages reads _headers from the output folder. sw.js must never be cached, or
+// corrections would not reach phones that already have the site.
+assets.set('_headers', ['/*','  X-Content-Type-Options: nosniff','  Referrer-Policy: no-referrer','  Permissions-Policy: camera=(), microphone=(), geolocation=()','/sw.js','  Cache-Control: no-cache',''].join('\n'));
 
 // Only empty the output folder when it is inside dist/, never an arbitrary path. Its contents
 // are removed rather than the folder itself, which Windows refuses while the folder is open.

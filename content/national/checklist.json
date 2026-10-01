@@ -16,7 +16,7 @@
         { "source": "phb-2026", "locator": "párr. 161", "verification": "primary" },
         { "source": "onu-principios-rectores", "locator": "Principio 6.3", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "no-necesitas-denuncia",
@@ -29,7 +29,7 @@
         { "source": "lgmdfp", "locator": "art. 80, penúltimo párrafo (adicionado DOF 16-07-2025)", "verification": "primary" },
         { "source": "onu-principios-rectores", "locator": "Principio 6.2", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Key message. Wording must be agreed with the reviewer: since the 2025 reform, a report also triggers an investigation (see research doc, finding 4)." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Key message. Wording must be agreed with the reviewer: since the 2025 reform, a report also triggers an investigation (see research doc, finding 4)." }
     },
     {
       "id": "cualquiera-puede-reportar",
@@ -41,7 +41,7 @@
         { "source": "lgmdfp", "locator": "art. 80 (reporte anónimo)", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 81, primer párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "donde-reportar",
@@ -61,7 +61,7 @@
         { "source": "phb-2026", "locator": "párr. 113 (911 y Locatel deben recibir reportes)", "verification": "primary" },
         { "source": "idheas-2025", "locator": "pp. 17–18", "verification": "secondary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "IDHEAS recommends reporting to both the national and state commission. Should we say so?" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "IDHEAS recommends reporting to both the national and state commission. Should we say so?" }
     },
     {
       "id": "si-paso-en-otro-estado",
@@ -73,7 +73,7 @@
         { "source": "phb-2026", "locator": "párr. 146", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 86", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Important for the Estado de México / CDMX metro area." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Important for the Estado de México / CDMX metro area." }
     },
     {
       "id": "pide-folio-y-copia",
@@ -86,7 +86,7 @@
         { "source": "lgmdfp", "locator": "art. 85, último párrafo", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 154", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "pide-cartilla-de-derechos",
@@ -97,7 +97,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 155 y Anexo 2", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "aunque-falten-datos",
@@ -109,7 +109,7 @@
         { "source": "lgmdfp", "locator": "art. 85, fracc. I Bis y penúltimo párrafo", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 152", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "lleva-lo-que-tengas",
@@ -120,7 +120,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 150 y 153", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "ninas-ninos-adolescentes",
@@ -132,7 +132,7 @@
         { "source": "lgmdfp", "locator": "art. 7", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 48, fracc. VI", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "mujeres-protocolo-alba",
@@ -143,7 +143,7 @@
       "sources": [
         { "source": "idheas-2025", "locator": "pp. 15–16", "verification": "secondary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "It varies by state; each state file has its own note." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "It varies by state; each state file has its own note." }
     },
     {
       "id": "si-piden-dinero",
@@ -154,7 +154,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 159", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "SENSITIVE. The reviewer should add practical safety advice (what to do during the call, whether to pay). I have no source for that." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "SENSITIVE. The reviewer should add practical safety advice (what to do during the call, whether to pay). I have no source for that." }
     },
     {
       "id": "amparo-buscador",
@@ -167,7 +167,7 @@
         { "source": "phb-2026", "locator": "párr. 157", "verification": "primary" },
         { "source": "idheas-2025", "locator": "pp. 49–50", "verification": "secondary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Should this appear on the first screen or later? (open question 6)" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Should this appear on the first screen or later? (open question 6)" }
     },
     {
       "id": "guarda-objetos-personales",
@@ -178,7 +178,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "Anexo 3, necesidades de las familias, punto 5", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Should we add how to store them (e.g. a paper bag)? I have no source for that." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Should we add how to store them (e.g. a paper bag)? I have no source for that." }
     },
     {
       "id": "anota-todo",
@@ -189,7 +189,7 @@
       "sources": [
         { "source": "idheas-2025", "locator": "p. 19", "verification": "secondary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "fuera-de-mexico",
@@ -202,7 +202,7 @@
         { "source": "lgmdfp", "locator": "art. 84", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 158", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "entrevista-y-cuestionario",
@@ -215,7 +215,7 @@
         { "source": "phb-2026", "locator": "párr. 249, inciso c; Anexo 3", "verification": "primary" },
         { "source": "idheas-2025", "locator": "pp. 41–43", "verification": "secondary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "ficha-de-busqueda",
@@ -227,7 +227,7 @@
         { "source": "lgmdfp", "locator": "art. 12 Duodecies", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 145 Bis a 145 Quater", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The reviewer may want to add advice on sharing the poster on social media." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The reviewer may want to add advice on sharing the poster on social media." }
     },
     {
       "id": "participa-en-la-busqueda",
@@ -238,7 +238,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 138, fracc. I y II", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "revisa-el-expediente",
@@ -250,7 +250,7 @@
         { "source": "lgmdfp", "locator": "art. 87, último párrafo", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 138, fracc. III y IV", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Art. 138 fr. IV says free copies of the search file; confirm whether this also covers the investigation file." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Art. 138 fr. IV says free copies of the search file; confirm whether this also covers the investigation file." }
     },
     {
       "id": "muestras-de-adn",
@@ -262,7 +262,7 @@
         { "source": "lgmdfp", "locator": "art. 123", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "apoyo-a-victimas",
@@ -275,7 +275,7 @@
         { "source": "lgmdfp", "locator": "arts. 136, 139 y 140", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 138, fracc. V", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "si-te-amenazan",
@@ -287,7 +287,7 @@
         { "source": "phb-2026", "locator": "párr. 160", "verification": "primary" },
         { "source": "onu-principios-rectores", "locator": "Principio 14", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "SENSITIVE. The reviewer should add practical safety advice." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "SENSITIVE. The reviewer should add practical safety advice." }
     },
     {
       "id": "la-busqueda-no-se-cierra",
@@ -299,7 +299,7 @@
         { "source": "lgmdfp", "locator": "art. 79", "verification": "primary" },
         { "source": "onu-principios-rectores", "locator": "Principio 7", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "nunca-es-tarde",
@@ -311,7 +311,7 @@
         { "source": "phb-2026", "locator": "párr. 161 y 162", "verification": "primary" },
         { "source": "idheas-2025", "locator": "p. 19", "verification": "secondary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "declaracion-especial-de-ausencia",
@@ -324,7 +324,7 @@
         { "source": "lgmdfp", "locator": "art. 146, fracc. I, III y V", "verification": "primary" },
         { "source": "lgmdfp", "locator": "arts. 147 y 148", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Examples chosen from the nine effects in art. 146; confirm they are the right ones to highlight. The state procedure is set by state law." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Examples chosen from the nine effects in art. 146; confirm they are the right ones to highlight. The state procedure is set by state law." }
     }
   ]
 }

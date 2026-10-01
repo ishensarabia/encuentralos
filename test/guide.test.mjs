@@ -9,7 +9,7 @@ import { loadContent, validateContent, selectPublishable } from '../scripts/lib/
 import { bundleGuideScript } from '../scripts/lib/offline.mjs';
 
 const repo = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
-const TODAY = '2026-09-29';
+const TODAY = '2026-10-01';
 
 test('a step without conditions always applies', () => {
   assert.equal(stepApplies({ item: 'x' }, {}), true);
@@ -80,8 +80,10 @@ test('guide validation rejects unknown items, questions and options', async () =
   assert.ok(has('needs exactly one of item, section or state'));
 });
 
-test('the guided questions are not published until approved', async () => {
+test('the guided questions are published only while the guide is approved', async () => {
   const content = await loadContent(path.join(repo, 'content'));
+  assert.ok(selectPublishable(content).guide, 'the approved guide should be published');
+  content.guide.review.status = 'unreviewed';
   assert.equal(selectPublishable(content).guide, null);
 });
 

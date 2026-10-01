@@ -65,7 +65,7 @@
       "url": "https://www.congresojal.gob.mx/boletines/diputados-crean-nueva-ley-de-personas-desaparecidas",
       "published": "2021",
       "last_reform": null,
-      "accessed": null
+      "accessed": "2026-10-01"
     },
     {
       "id": "jalisco-protocolo-alba",
@@ -154,6 +154,17 @@
       "published": null,
       "last_reform": null,
       "accessed": null
+    },
+    {
+      "id": "eluniversal-cdmx-reportar",
+      "short": "El Universal: cómo reportar en la CDMX",
+      "title": "¿Cómo reportar a una persona desaparecida en la CDMX?",
+      "issuer": "El Universal",
+      "type": "news",
+      "url": "https://www.eluniversal.com.mx/nacion/como-reportar-una-persona-desaparecida-en-cdmx/",
+      "published": "2022-12-26",
+      "last_reform": null,
+      "accessed": "2026-10-01"
     }
   ]
 }

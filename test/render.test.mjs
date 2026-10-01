@@ -50,7 +50,7 @@ function fixture() {
 
 // Every relative href/src must point to a generated file, and every #anchor to an id on that page.
 function brokenLinks(pages) {
-  const files = new Map([...pages, ...buildAssets(pages, { guideLogic: '', guideUi: '', appJs: '', icon: '' })]);
+  const files = new Map([...pages, ...buildAssets(pages, { guideLogic: '', guideUi: '', appJs: '', icon: '', fichaUi: '', escritosLogic: '', escritosUi: '' })]);
   const broken = [];
   for (const [file, html] of pages) {
     for (const [, href] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
@@ -68,7 +68,7 @@ function brokenLinks(pages) {
 function unexpectedScripts(html) {
   return [...html.matchAll(/<script\b[^>]*>/gi)]
     .map(([tag]) => tag)
-    .filter((tag) => !/^<script src="(app|guia)\.js" defer>$/.test(tag) && !/^<script type="application\/json" id="guia-datos">$/.test(tag));
+    .filter((tag) => !/^<script src="(app|guia|ficha|escritos)\.js" defer>$/.test(tag) && !/^<script type="application\/json" id="(guia|ficha|escritos)-datos">$/.test(tag));
 }
 
 test('preview of the real content: every page is flagged, unindexed and runs only our scripts', async () => {
@@ -108,8 +108,11 @@ test('preview of the real content includes the guided questions and the "no te r
   assert.match(sheet, /<blockquote class="quote"><p>«Ningún protocolo establecerá plazos de espera/);
 });
 
-test('public build of the real content is refused until required items are approved', async () => {
+test('public build of the real content works, and is refused if a required item loses approval', async () => {
   const content = await loadContent(contentRoot);
+  assert.doesNotThrow(() => renderSite(selectPublishable(content), opts('public')));
+  const required = content.sections.flatMap((s) => s.items).find((i) => i.id === 'no-esperes');
+  required.review.status = 'unreviewed';
   assert.throws(() => renderSite(selectPublishable(content), opts('public')), /must be approved first: no-esperes/);
 });
 
@@ -123,7 +126,7 @@ test('public build shows approved items only, without review markup', () => {
   const pages = renderSite(selectPublishable(c), opts('public'));
   const all = [...pages.values()].join('\n');
   assert.match(all, /Título no-esperes/);
-  assert.match(all, /Revisado el 20 de septiembre de 2026/);
+  assert.match(all, /Fuentes verificadas el 20 de septiembre de 2026/);
   for (const hidden of ['Título secreto', 'nota interna', 'VERSIÓN DE REVISIÓN', 'Sin revisar', 'noindex', 'Otra fuente']) {
     assert.ok(!all.includes(hidden), `public site contains "${hidden}"`);
   }

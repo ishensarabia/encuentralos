@@ -14,7 +14,7 @@
         { "source": "phb-2026", "locator": "párr. 150, incisos a, b, i", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 106, fracc. II, incisos h, i", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The CURP is optional (see checklist item aunque-falten-datos)." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The CURP is optional (see checklist item aunque-falten-datos)." }
     },
     {
       "id": "doc-fotos",
@@ -24,7 +24,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 150, inciso e", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "doc-senas-y-ropa",
@@ -34,7 +34,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 150, incisos f, h", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "doc-ultimo-contacto",
@@ -45,7 +45,7 @@
         { "source": "phb-2026", "locator": "párr. 150, inciso g", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 85, fracc. V", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "doc-telefono-y-redes",
@@ -55,7 +55,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 150, incisos m, n, o", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "doc-rutinas",
@@ -65,7 +65,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 150, incisos c, d", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "doc-salud",
@@ -76,7 +76,7 @@
         { "source": "phb-2026", "locator": "párr. 150, incisos p, q", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 106, fracc. II, inciso n", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Inciso q (substance use) is left out of the copy on purpose; the reviewer should decide whether to mention it." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Inciso q (substance use) is left out of the copy on purpose; the reviewer should decide whether to mention it." }
     },
     {
       "id": "doc-pistas",
@@ -86,7 +86,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 150, incisos r a y", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "doc-familiares-adn",
@@ -97,7 +97,7 @@
         { "source": "lgmdfp", "locator": "art. 106, fracc. II, inciso p", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     }
   ]
 }

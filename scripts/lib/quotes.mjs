@@ -8,6 +8,19 @@ import path from 'node:path';
 // Whitespace and line breaks from PDF extraction do not count; every word must match.
 export const normalizeText = (s) => s.normalize('NFC').replace(/\s+/g, ' ').trim();
 
+// Same check for the articles quoted by the document generator (site/tools.mjs).
+export async function checkFundamentos(fundamentos, sourceTextsDir, source = 'lgmdfp') {
+  let full;
+  try {
+    full = normalizeText(await readFile(path.join(sourceTextsDir, `${source}.txt`), 'utf8'));
+  } catch {
+    return [`fundamentos: no stored text for source "${source}" in docs/source-texts/, so they cannot be checked`];
+  }
+  return Object.entries(fundamentos)
+    .filter(([, f]) => !full.includes(normalizeText(f.text)))
+    .map(([key, f]) => `fundamento "${key}" (${f.art}): not found word for word in source "${source}"`);
+}
+
 export async function checkQuotes(content, sourceTextsDir) {
   const errors = [];
   const texts = new Map();

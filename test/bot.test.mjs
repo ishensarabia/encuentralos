@@ -197,7 +197,7 @@ test('a topic shows its quote once, its contacts and its sources, and the review
   const [contact] = reply(publicBot(), 'i:instituciones:ag-cnb');
   assert.match(contact.body, /Teléfono gratuito: 800 028 77 83/);
   assert.match(contact.body, /Fuente: Ley General, art\. 1/);
-  assert.match(contact.body, /Revisado el 20 de septiembre de 2026/);
+  assert.match(contact.body, /Fuentes verificadas el 20 de septiembre de 2026/);
 });
 
 test('long topics are split into text messages within WhatsApp limits, then buttons', () => {
@@ -259,8 +259,8 @@ test('a section without a menu entry stops the bot instead of being silently lef
   assert.throws(() => createBot({ content, mode: 'public' }), /no menu entry for section "nueva"/);
 });
 
-test('loadBot refuses public mode until the real content is approved', async () => {
-  await assert.rejects(() => loadBot({ mode: 'public' }), /unapproved items|must be approved first/);
+test('loadBot starts in public mode with the approved real content', async () => {
+  await assert.doesNotReject(() => loadBot({ mode: 'public' }));
 });
 
 // --- privacy ---

@@ -114,3 +114,31 @@ button { font: inherit; cursor: pointer; }
   /* The preview banner stays on paper: an unreviewed printout must say so. */
   .flag { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* Tools that run on the phone: flyer and documents for authorities. */
+.tool .field { display: block; margin: 1rem 0; }
+.tool .field-label { display: block; font-weight: 700; }
+.tool .hint { display: block; font-size: .95rem; color: var(--muted); font-weight: 400; }
+.tool input[type=text], .tool input[type=tel], .tool input[type=email], .tool input[type=number], .tool input[type=date], .tool input:not([type]), .tool textarea {
+  width: 100%; min-height: 44px; margin-top: .35rem; padding: .5rem .6rem; font: inherit;
+  color: var(--fg); background: var(--bg); border: 1px solid var(--muted); border-radius: .4rem;
+}
+.tool input[type=file] { display: block; margin-top: .35rem; max-width: 100%; }
+.tool .choice { border: 1px solid var(--line); border-radius: .6rem; margin: 1rem 0; padding: .5rem 1rem 1rem; }
+.tool .choice legend { font-weight: 700; padding: 0 .25rem; }
+.tool .choice label { display: flex; align-items: flex-start; gap: .6rem; min-height: 44px; padding: .25rem 0; }
+.tool .choice input[type=radio] { width: 1.3rem; height: 1.3rem; margin-top: .2rem; accent-color: var(--accent); flex: none; }
+.tool button.call { border: 0; width: 100%; }
+.actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.actions button { min-height: 44px; padding: .5rem 1rem; border-radius: .5rem; font-weight: 700; }
+.actions button.call { width: auto; border: 0; }
+button.alt { border: 2px solid var(--accent); background: transparent; color: var(--accent); }
+#ficha-canvas { display: block; width: 100%; max-width: 28rem; height: auto; border: 1px solid var(--line); margin: 1rem auto; }
+.doc { white-space: pre-wrap; word-wrap: break-word; font: .95rem/1.5 ui-monospace, "Cascadia Mono", Consolas, monospace; background: var(--soft); padding: 1rem; border-radius: .5rem; }
+#escritos-titulo:focus { outline: none; }
+@media print {
+  .no-print, .note { display: none !important; }
+  .doc { background: none; padding: 0; font-size: 11pt; }
+  /* Printing the document prints only the document, not the page around it. */
+  .page-escritos main > *:not(#escritos-resultado) { display: none !important; }
+}

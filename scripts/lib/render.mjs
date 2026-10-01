@@ -4,6 +4,8 @@
 
 import { SITE, HOME_ITEMS, REQUIRED_PUBLIC_ITEMS, PAGES, GUIDE_PAGE, PHASE_TITLES, T } from '../../site/strings.mjs';
 import { PHASES, summarize } from './content.mjs';
+import { FICHA_PAGE, ESCRITOS_PAGE } from '../../site/tools.mjs';
+import { renderFichaBody, renderEscritosBody } from './tools-render.mjs';
 
 const ENTITIES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 export const esc = (value) => String(value).replace(/[&<>"']/g, (c) => ENTITIES[c]);
@@ -27,7 +29,7 @@ export function telHref(value) {
 }
 
 // Only our own files may load: no third-party scripts, styles, fonts or trackers.
-const CSP = "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self'; manifest-src 'self'; worker-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'";
+const CSP = "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' blob:; manifest-src 'self'; worker-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'";
 
 function layout({ mode, title, description, body, bodyClass = '', nav, css, footerExtra = '', scripts = [] }) {
   const fullTitle = title === SITE.name ? SITE.name : `${title} · ${SITE.name}`;
@@ -210,6 +212,8 @@ export function renderSite(content, { mode, css, builtOn }) {
     { file: 'index.html', label: T.homeNav },
     ...(guide ? [{ file: GUIDE_PAGE.file, label: GUIDE_PAGE.nav }] : []),
     ...sectionPages.map((p) => ({ file: p.file, label: p.nav })),
+    { file: FICHA_PAGE.file, label: FICHA_PAGE.nav },
+    { file: ESCRITOS_PAGE.file, label: ESCRITOS_PAGE.nav },
     { file: 'fuentes.html', label: T.sourcesNav },
     { file: 'acerca.html', label: T.aboutNav },
   ];
@@ -238,7 +242,7 @@ export function renderSite(content, { mode, css, builtOn }) {
         ? `<h2>${esc(T.homeStates)}</h2>\n${cards(statePages.map((s) => ({ file: s.file, label: s.state.name })))}\n<p>${esc(T.homeStatesMissing)}</p>`
         : '',
       `<h2>${esc(T.homeMore)}</h2>`,
-      cards(sectionPages.map((p) => ({ file: p.file, label: p.nav }))),
+      cards([...sectionPages.map((p) => ({ file: p.file, label: p.nav })), { file: FICHA_PAGE.file, label: FICHA_PAGE.nav }, { file: ESCRITOS_PAGE.file, label: ESCRITOS_PAGE.nav }]),
     ].join('\n'),
   }));
 
@@ -251,6 +255,22 @@ export function renderSite(content, { mode, css, builtOn }) {
       body: renderGuide(guide, { ctx, itemsById, statePages, sectionPages }),
     }));
   }
+
+  // Tools that run on the phone. Without JavaScript they point to the written steps.
+  const toolFallback = sectionPages.find((p) => p.section.id === 'documentos') ?? { file: 'index.html', nav: T.homeNav };
+  pages.set(FICHA_PAGE.file, page({
+    title: FICHA_PAGE.title,
+    description: FICHA_PAGE.description,
+    scripts: [FICHA_PAGE.script],
+    body: renderFichaBody(toolFallback),
+  }));
+  pages.set(ESCRITOS_PAGE.file, page({
+    title: ESCRITOS_PAGE.title,
+    description: ESCRITOS_PAGE.description,
+    scripts: [ESCRITOS_PAGE.script],
+    bodyClass: 'page-escritos',
+    body: renderEscritosBody(sectionPages.find((p) => p.section.id === 'rechazo') ?? { file: 'index.html', nav: T.homeNav }),
+  }));
 
   // National sections
   for (const p of sectionPages) {

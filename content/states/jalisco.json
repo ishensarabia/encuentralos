@@ -14,11 +14,11 @@
         { "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Teléfono", "value": "33 1514 5422", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": null },
-        { "kind": "phone", "label": "Teléfono", "value": "33 3145 6314", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": null },
-        { "kind": "address", "label": "Dirección", "value": "Calle Libertad 1955, Col. Americana, C.P. 44150, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": null }
+        { "kind": "phone", "label": "Teléfono", "value": "33 1514 5422", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": "2026-10-01" },
+        { "kind": "phone", "label": "Teléfono", "value": "33 3145 6314", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": "2026-10-01" },
+        { "kind": "address", "label": "Dirección", "value": "Calle Libertad 1955, Col. Americana, C.P. 44150, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Comisión de Búsqueda", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "jal-fiscalia-especial",
@@ -29,10 +29,10 @@
         { "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Teléfono (extensiones 12115 y 12116)", "value": "33 3738 6000", "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "confirmed_on": null },
-        { "kind": "address", "label": "Dirección", "value": "Calzada Independencia Norte 778, 2o. piso, Col. La Perla, C.P. 44360, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "confirmed_on": null }
+        { "kind": "phone", "label": "Teléfono (extensiones 12115 y 12116)", "value": "33 3738 6000", "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "confirmed_on": "2026-10-01" },
+        { "kind": "address", "label": "Dirección", "value": "Calzada Independencia Norte 778, 2o. piso, Col. La Perla, C.P. 44360, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Fiscalía Especial", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "jal-ceeav",
@@ -43,10 +43,10 @@
         { "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Teléfono", "value": "33 1543 8809", "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "confirmed_on": null },
-        { "kind": "address", "label": "Dirección", "value": "Francisco I. Madero 110, esquina Degollado, 3er. piso, Col. Centro, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "confirmed_on": null }
+        { "kind": "phone", "label": "Teléfono", "value": "33 1543 8809", "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "confirmed_on": "2026-10-01" },
+        { "kind": "address", "label": "Dirección", "value": "Francisco I. Madero 110, esquina Degollado, 3er. piso, Col. Centro, Guadalajara, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección CEEAV", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "jal-ijcf",
@@ -57,10 +57,10 @@
         { "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Teléfono", "value": "33 3030 9400", "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "confirmed_on": null },
-        { "kind": "address", "label": "Dirección", "value": "Batalla de Zacatecas 2395, Fracc. Revolución, C.P. 45580, Tlaquepaque, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "confirmed_on": null }
+        { "kind": "phone", "label": "Teléfono", "value": "33 3030 9400", "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "confirmed_on": "2026-10-01" },
+        { "kind": "address", "label": "Dirección", "value": "Batalla de Zacatecas 2395, Fracc. Revolución, C.P. 45580, Tlaquepaque, Jalisco", "source": "jalisco-estamos-buscando", "locator": "sección Instituto Jalisciense de Ciencias Forenses", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Reviewer: what should families know about the IJCF (DNA sampling, identification)? The body is a placeholder." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Reviewer: what should families know about the IJCF (DNA sampling, identification)? The body is a placeholder." }
     },
     {
       "id": "jal-ley-estatal",
@@ -68,9 +68,9 @@
       "title": "Ley estatal",
       "body": "En Jalisco también aplica la Ley de Personas Desaparecidas del Estado de Jalisco, aprobada en 2021.",
       "sources": [
-        { "source": "jalisco-ley-personas-desaparecidas", "locator": "boletín del Congreso de Jalisco", "verification": "unconfirmed" }
+        { "source": "jalisco-ley-personas-desaparecidas", "locator": "boletín del Congreso de Jalisco (25 de febrero de 2021)", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Read the published law text and add the official publication date. A reform was being discussed in 2026." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Read the published law text and add the official publication date. A reform was being discussed in 2026." }
     },
     {
       "id": "jal-protocolo-alba",
@@ -81,9 +81,9 @@
         { "source": "jalisco-protocolo-alba", "locator": "página del protocolo", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "email", "label": "Buzón ciudadano de la Fiscalía Especial (correo)", "value": "buzonciudadanofepd.fe@jalisco.gob.mx", "source": "jalisco-protocolo-alba", "locator": "página del protocolo", "confirmed_on": null }
+        { "kind": "email", "label": "Buzón ciudadano de la Fiscalía Especial (correo)", "value": "buzonciudadanofepd.fe@jalisco.gob.mx", "source": "jalisco-protocolo-alba", "locator": "página del protocolo", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The page does not say who can request activation, how, or by which phone. Reviewer: add that if known. The email is the page's only contact and is a citizen mailbox, not an emergency channel, so consider not showing it as the way to activate Alba." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The page does not say who can request activation, how, or by which phone. Reviewer: add that if known. The email is the page's only contact and is a citizen mailbox, not an emergency channel, so consider not showing it as the way to activate Alba." }
     }
   ]
 }

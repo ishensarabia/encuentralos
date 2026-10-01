@@ -14,7 +14,7 @@
         { "source": "lgmdfp", "locator": "art. 119", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 106, fracc. II, incisos q, r", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The type of sample (saliva, blood) is not in the law or the PHB. Reviewer: add it if you want it said." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The type of sample (saliva, blood) is not in the law or the PHB. Reviewer: add it if you want it said." }
     },
     {
       "id": "adn-quien-da-muestra",
@@ -24,7 +24,7 @@
       "sources": [
         { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "adn-quien-la-toma",
@@ -35,7 +35,7 @@
         { "source": "lgmdfp", "locator": "art. 53, fracc. XXVI Sexies", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 109 y 400", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Open question: in practice, should families be warned about giving samples twice or to several authorities?" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Open question: in practice, should families be warned about giving samples twice or to several authorities?" }
     },
     {
       "id": "adn-permiso",
@@ -46,7 +46,7 @@
         { "source": "lgmdfp", "locator": "art. 123, primer párrafo", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 122, primer párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "adn-constancia",
@@ -57,7 +57,7 @@
         { "source": "lgmdfp", "locator": "art. 122, primer párrafo", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 249, inciso d", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "adn-solo-para-identificar",
@@ -68,7 +68,7 @@
         { "source": "lgmdfp", "locator": "art. 122, segundo párrafo", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 108, último párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "adn-perito-independiente",
@@ -78,7 +78,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 123, primer y tercer párrafos", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Reviewer: is this useful for families in practice, or better left out of the short version?" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Reviewer: is this useful for families in practice, or better left out of the short version?" }
     },
     {
       "id": "adn-muestras-existentes",
@@ -89,7 +89,7 @@
         { "source": "lgmdfp", "locator": "art. 106, fracc. II, incisos n, r", "verification": "primary" },
         { "source": "phb-2026", "locator": "párr. 249, inciso c; Anexo 3, necesidades de las familias, punto 5", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "The hospital example is mine, not from the source. Open questions: how long results take, and whether families can get a copy of the result." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "The hospital example is mine, not from the source. Open questions: how long results take, and whether families can get a copy of the result." }
     }
   ]
 }

@@ -14,7 +14,7 @@
         { "source": "idheas-2025", "locator": "p. 18", "verification": "secondary" }
       ],
       "contacts": [],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Contact data lives in each state file." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Contact data lives in each state file." }
     },
     {
       "id": "ag-cnb",
@@ -26,11 +26,11 @@
         { "source": "lgmdfp", "locator": "art. 12 Duodecies", "verification": "primary" }
       ],
       "contacts": [
-        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 028 77 83", "source": "idheas-2025", "locator": "p. 17", "confirmed_on": null },
-        { "kind": "whatsapp", "label": "WhatsApp", "value": "55 1309 9024", "source": "idheas-2025", "locator": "p. 17", "confirmed_on": null },
-        { "kind": "web", "label": "Reporte por internet", "value": "https://cnbreportadesaparecidos.segob.gob.mx", "source": "idheas-2025", "locator": "p. 18", "confirmed_on": null }
+        { "kind": "phone", "label": "Teléfono gratuito", "value": "800 028 77 83", "source": "idheas-2025", "locator": "p. 17", "confirmed_on": "2026-10-01" },
+        { "kind": "whatsapp", "label": "WhatsApp", "value": "55 1309 9024", "source": "idheas-2025", "locator": "p. 17", "confirmed_on": "2026-10-01" },
+        { "kind": "web", "label": "Reporte por internet", "value": "https://cnbreportadesaparecidos.segob.gob.mx", "source": "idheas-2025", "locator": "p. 18", "confirmed_on": "2026-10-01" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "CNB's own report page returned 404 on 2026-09-29. The international number is left out because sources disagree." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "CNB's own report page returned 404 on 2026-09-29. The international number is left out because sources disagree." }
     },
     {
       "id": "ag-fiscalia",
@@ -41,7 +41,7 @@
         { "source": "lgmdfp", "locator": "arts. 70, 80 y 88", "verification": "primary" }
       ],
       "contacts": [],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "ag-servicios-periciales",
@@ -53,7 +53,7 @@
         { "source": "phb-2026", "locator": "párr. 109 y 400", "verification": "primary" }
       ],
       "contacts": [],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Should the Centro Nacional de Identificación Humana be named? Its role after the 2025 reform is unconfirmed." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Should the Centro Nacional de Identificación Humana be named? Its role after the 2025 reform is unconfirmed." }
     },
     {
       "id": "ag-atencion-victimas",
@@ -65,7 +65,7 @@
         { "source": "lgmdfp", "locator": "art. 144, cuarto párrafo", "verification": "primary" }
       ],
       "contacts": [],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Legal aid (asesoría jurídica) comes from the Ley General de Víctimas, which I have not read yet. Add it as a source or remove the phrase." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Legal aid (asesoría jurídica) comes from the Ley General de Víctimas, which I have not read yet. Add it as a source or remove the phrase." }
     },
     {
       "id": "ag-juzgados",
@@ -76,7 +76,7 @@
         { "source": "phb-2026", "locator": "párr. 104", "verification": "primary" }
       ],
       "contacts": [],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "ag-derechos-humanos",
@@ -87,7 +87,7 @@
         { "source": "lgmdfp", "locator": "art. 144, tercer párrafo", "verification": "primary" }
       ],
       "contacts": [],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "ag-consulados",
@@ -99,7 +99,7 @@
         { "source": "phb-2026", "locator": "párr. 109", "verification": "primary" }
       ],
       "contacts": [],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     }
   ]
 }

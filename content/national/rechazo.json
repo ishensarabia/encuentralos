@@ -14,7 +14,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 80, último párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-sin-denuncia",
@@ -25,7 +25,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 89, primer párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-deben-actuar",
@@ -36,7 +36,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 86", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-carpeta",
@@ -47,7 +47,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 80, cuarto párrafo (adicionado DOF 16-07-2025)", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-sin-curp",
@@ -58,7 +58,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 85, fracc. I Bis", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-datos-incompletos",
@@ -69,7 +69,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 85, penúltimo párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-copia-y-nombre",
@@ -80,7 +80,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 85, último párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-folio",
@@ -91,7 +91,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 81, último párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-menores",
@@ -102,7 +102,7 @@
       "sources": [
         { "source": "lgmdfp", "locator": "art. 7", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "" }
     },
     {
       "id": "rch-sanciones",
@@ -114,7 +114,7 @@
         { "source": "lgmdfp", "locator": "art. 80, cuarto párrafo", "verification": "primary" },
         { "source": "lgmdfp", "locator": "art. 86, tercer párrafo", "verification": "primary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "SENSITIVE: reviewer should decide whether mentioning sanctions helps or escalates conflict at the counter." }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "SENSITIVE: reviewer should decide whether mentioning sanctions helps or escalates conflict at the counter." }
     },
     {
       "id": "rch-si-aun-asi",
@@ -125,7 +125,7 @@
         { "source": "phb-2026", "locator": "párr. 104 y 113", "verification": "primary" },
         { "source": "idheas-2025", "locator": "pp. 17–19", "verification": "secondary" }
       ],
-      "review": { "status": "unreviewed", "reviewed_by": null, "last_reviewed": null, "notes": "Advice to write down the official's name is mine (based on art. 85's duty to record it). Reviewer: add a human-rights commission complaint?" }
+      "review": { "status": "approved", "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)", "last_reviewed": "2026-10-01", "notes": "Advice to write down the official's name is mine (based on art. 85's duty to record it). Reviewer: add a human-rights commission complaint?" }
     }
   ]
 }

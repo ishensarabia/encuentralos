@@ -73,9 +73,11 @@ self.addEventListener('fetch', function (event) {
 }
 
 // pages: Map<file, html> from renderSite. Returns the extra files to write.
-export function buildAssets(pages, { guideLogic, guideUi, appJs, icon }) {
+export function buildAssets(pages, { guideLogic, guideUi, appJs, icon, fichaUi, escritosLogic, escritosUi }) {
   const assets = new Map();
   if (pages.has('que-hago.html')) assets.set('guia.js', bundleGuideScript(guideLogic, guideUi));
+  if (pages.has('ficha.html')) assets.set('ficha.js', fichaUi);
+  if (pages.has('escritos.html')) assets.set('escritos.js', bundleGuideScript(escritosLogic, escritosUi));
   assets.set('app.js', appJs);
   assets.set('icon.svg', icon);
   assets.set('manifest.webmanifest', manifest());

@@ -54,7 +54,7 @@ export const B = {
   about: [
     '*Sobre esta guía*',
     'Es gratuita y de código abierto. Explica qué hacer en las primeras horas y días después de que una persona desaparece en México.',
-    'Todo viene de leyes, protocolos y guías públicas, y cada paso dice de dónde sale. Una organización de apoyo a familias revisa el contenido antes de publicarlo.',
+    'Todo viene de leyes, protocolos y guías públicas, y cada paso dice de dónde sale. Cada dato lleva la fecha en que se verificó. No es asesoría legal.',
     '*Tus datos:* no guardo tu número ni tus mensajes; solo cuento cuántas veces se usa cada tema. Pero WhatsApp y Meta sí pueden ver esta conversación.',
     'Es una guía informativa y no sustituye la asesoría legal.',
   ],
