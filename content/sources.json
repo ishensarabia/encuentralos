@@ -165,6 +165,28 @@
       "published": "2022-12-26",
       "last_reform": null,
       "accessed": "2026-10-01"
+    },
+    {
+      "id": "michoacan-cbpm",
+      "short": "Comisión de Búsqueda de Michoacán (sitio oficial)",
+      "title": "Comisión de Búsqueda de Personas del Estado de Michoacán: contacto",
+      "issuer": "Gobierno del Estado de Michoacán",
+      "type": "official_site",
+      "url": "https://cbpm.michoacan.gob.mx",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-10-01"
+    },
+    {
+      "id": "chiapas-cebp",
+      "short": "Comisión de Búsqueda de Chiapas (sitio oficial)",
+      "title": "Comisión Estatal de Búsqueda de Personas de Chiapas: contacto",
+      "issuer": "Gobierno del Estado de Chiapas",
+      "type": "official_site",
+      "url": "https://www.cebp.chiapas.gob.mx",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-10-01"
     }
   ]
 }

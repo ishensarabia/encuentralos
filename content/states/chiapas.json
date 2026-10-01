@@ -1,0 +1,91 @@
+{
+  "state": {
+    "id": "chiapas",
+    "name": "Chiapas",
+    "aliases": [
+      "chiapas",
+      "chis",
+      "tuxtla",
+      "tuxtla gutierrez",
+      "tapachula",
+      "san cristobal",
+      "san cristobal de las casas"
+    ]
+  },
+  "items": [
+    {
+      "id": "chis-comision-busqueda",
+      "kind": "agency",
+      "title": "Comisión Estatal de Búsqueda de Personas de Chiapas",
+      "body": "Es la Comisión Local de Búsqueda de Chiapas. Cuando recibe un reporte, debe iniciar la búsqueda de inmediato e informar a la Fiscalía.",
+      "sources": [
+        {
+          "source": "lgmdfp",
+          "locator": "art. 89",
+          "verification": "primary"
+        },
+        {
+          "source": "chiapas-cebp",
+          "locator": "página de contacto",
+          "verification": "primary"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "Recepción",
+          "value": "961 688 86 68",
+          "source": "chiapas-cebp",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "phone",
+          "label": "Departamento de búsqueda",
+          "value": "961 600 37 69",
+          "source": "chiapas-cebp",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "phone",
+          "label": "Guardia",
+          "value": "961 238 01 98",
+          "source": "chiapas-cebp",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "email",
+          "label": "Correo",
+          "value": "chiapascebp@gmail.com",
+          "source": "chiapas-cebp",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "address",
+          "label": "Dirección",
+          "value": "Avenida 17 Sur Poniente 1702, Col. Dr. Romeo Rincón, C.P. 29065, Tuxtla Gutiérrez, Chiapas",
+          "source": "chiapas-cebp",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "web",
+          "label": "Sitio oficial",
+          "value": "https://www.cebp.chiapas.gob.mx",
+          "source": "chiapas-cebp",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)",
+        "last_reviewed": "2026-10-01",
+        "notes": "Contacts read on the official site on 2026-10-01. Recheck before each release."
+      }
+    }
+  ]
+}

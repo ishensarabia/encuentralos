@@ -59,7 +59,12 @@ export function matchState(text, states) {
     }
   };
   for (const s of states) add([s.name, ...(s.aliases ?? [])], { kind: 'covered', id: s.id, name: s.name });
-  for (const o of OTHER_STATES) add([o.name, ...(o.aliases ?? [])], { kind: 'other', name: o.name });
+  // A state that now has a guide must not also count as "not covered yet" (that would look
+  // like two different states and make every mention ambiguous).
+  const covered = new Set(states.map((s) => normalizeName(s.name)));
+  for (const o of OTHER_STATES) {
+    if (!covered.has(normalizeName(o.name))) add([o.name, ...(o.aliases ?? [])], { kind: 'other', name: o.name });
+  }
 
   const hits = [];
   for (const c of candidates) {

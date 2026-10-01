@@ -1,0 +1,76 @@
+{
+  "state": {
+    "id": "michoacan",
+    "name": "Michoacán",
+    "aliases": [
+      "michoacan",
+      "mich",
+      "morelia",
+      "uruapan",
+      "zamora",
+      "apatzingan",
+      "lazaro cardenas",
+      "zitacuaro"
+    ]
+  },
+  "items": [
+    {
+      "id": "mic-comision-busqueda",
+      "kind": "agency",
+      "title": "Comisión de Búsqueda de Personas del Estado de Michoacán",
+      "body": "Es la Comisión Local de Búsqueda de Michoacán. Cuando recibe un reporte, debe iniciar la búsqueda de inmediato e informar a la Fiscalía.",
+      "sources": [
+        {
+          "source": "lgmdfp",
+          "locator": "art. 89",
+          "verification": "primary"
+        },
+        {
+          "source": "michoacan-cbpm",
+          "locator": "página de contacto",
+          "verification": "primary"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "Teléfono",
+          "value": "443 692 0751",
+          "source": "michoacan-cbpm",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "email",
+          "label": "Correo",
+          "value": "comisiondebusqueda@correo-michoacan.gob.mx",
+          "source": "michoacan-cbpm",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "address",
+          "label": "Dirección",
+          "value": "Constitución de Apatzingán 27, Col. Sentimientos de la Nación, C.P. 58178, Morelia, Michoacán",
+          "source": "michoacan-cbpm",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        },
+        {
+          "kind": "web",
+          "label": "Sitio oficial",
+          "value": "https://cbpm.michoacan.gob.mx",
+          "source": "michoacan-cbpm",
+          "locator": "página de contacto",
+          "confirmed_on": "2026-10-01"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)",
+        "last_reviewed": "2026-10-01",
+        "notes": "Contacts read on the official site on 2026-10-01. Recheck before each release."
+      }
+    }
+  ]
+}
