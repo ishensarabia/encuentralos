@@ -1,0 +1,67 @@
+{
+  "state": {
+    "id": "puebla",
+    "name": "Puebla",
+    "aliases": ["puebla", "pue", "puebla de zaragoza", "cholula", "tehuacan", "atlixco"]
+  },
+  "items": [
+    {
+      "id": "pue-comision-busqueda",
+      "kind": "agency",
+      "title": "Comisión de Búsqueda de Personas del Estado de Puebla",
+      "body": "Es la Comisión Local de Búsqueda de Puebla. Cuando recibe un reporte, debe iniciar la búsqueda de inmediato e informar a la Fiscalía.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 89", "verification": "primary" },
+        { "source": "puebla-cbpep", "locator": "página principal", "verification": "primary" }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "Teléfono (lunes a viernes, 9:00 a 18:00; ext. 114)",
+          "value": "222 246 38 30",
+          "source": "puebla-cbpep",
+          "locator": "página principal",
+          "confirmed_on": "2026-10-28"
+        },
+        {
+          "kind": "phone",
+          "label": "WhatsApp",
+          "value": "222 682 12 58",
+          "source": "puebla-cbpep",
+          "locator": "página principal",
+          "confirmed_on": "2026-10-28"
+        },
+        {
+          "kind": "email",
+          "label": "Correo",
+          "value": "comisiondebusqueda@puebla.gob.mx",
+          "source": "puebla-cbpep",
+          "locator": "página principal",
+          "confirmed_on": "2026-10-28"
+        },
+        {
+          "kind": "address",
+          "label": "Dirección",
+          "value": "Avenida 29 Oriente 620, Col. Ladrillera de Benítez, C.P. 72530, Puebla, Pue.",
+          "source": "puebla-cbpep",
+          "locator": "página principal",
+          "confirmed_on": "2026-10-28"
+        },
+        {
+          "kind": "web",
+          "label": "Sitio oficial",
+          "value": "https://cbpep.puebla.gob.mx",
+          "source": "puebla-cbpep",
+          "locator": "página principal",
+          "confirmed_on": "2026-10-28"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)",
+        "last_reviewed": "2026-10-28",
+        "notes": "Contacts read on the official site on 2026-10-28. Recheck before each release."
+      }
+    }
+  ]
+}

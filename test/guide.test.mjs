@@ -9,7 +9,7 @@ import { loadContent, validateContent, selectPublishable } from '../scripts/lib/
 import { bundleGuideScript } from '../scripts/lib/offline.mjs';
 
 const repo = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
-const TODAY = '2026-10-01';
+const TODAY = '2026-10-28';
 
 test('a step without conditions always applies', () => {
   assert.equal(stepApplies({ item: 'x' }, {}), true);

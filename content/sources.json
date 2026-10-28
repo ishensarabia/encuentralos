@@ -187,6 +187,28 @@
       "published": null,
       "last_reform": null,
       "accessed": "2026-10-01"
+    },
+    {
+      "id": "puebla-cbpep",
+      "short": "Comisión de Búsqueda de Puebla (sitio oficial)",
+      "title": "Comisión de Búsqueda de Personas del Estado de Puebla: contacto",
+      "issuer": "Gobierno del Estado de Puebla",
+      "type": "official_site",
+      "url": "https://cbpep.puebla.gob.mx",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "guerrero-cebp",
+      "short": "Comisión de Búsqueda de Guerrero (página oficial)",
+      "title": "Comisión Estatal de Búsqueda de Personas de Guerrero: contacto",
+      "issuer": "Gobierno del Estado de Guerrero",
+      "type": "official_site",
+      "url": "https://www.guerrero.gob.mx/dependencia/sector-paraestatal/comision-estatal-de-busqueda-de-personas/",
+      "published": null,
+      "last_reform": null,
+      "accessed": "2026-10-28"
     }
   ]
 }

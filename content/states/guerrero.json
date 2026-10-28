@@ -1,0 +1,51 @@
+{
+  "state": {
+    "id": "guerrero",
+    "name": "Guerrero",
+    "aliases": ["guerrero", "gro", "acapulco", "chilpancingo", "iguala", "taxco", "zihuatanejo"]
+  },
+  "items": [
+    {
+      "id": "gro-comision-busqueda",
+      "kind": "agency",
+      "title": "Comisión Estatal de Búsqueda de Personas de Guerrero",
+      "body": "Es la Comisión Local de Búsqueda de Guerrero. Cuando recibe un reporte, debe iniciar la búsqueda de inmediato e informar a la Fiscalía.",
+      "sources": [
+        { "source": "lgmdfp", "locator": "art. 89", "verification": "primary" },
+        { "source": "guerrero-cebp", "locator": "página de la Comisión", "verification": "primary" }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "Teléfono",
+          "value": "747 116 01 03",
+          "source": "guerrero-cebp",
+          "locator": "página de la Comisión",
+          "confirmed_on": "2026-10-28"
+        },
+        {
+          "kind": "email",
+          "label": "Correo",
+          "value": "cebp.gro@gmail.com",
+          "source": "guerrero-cebp",
+          "locator": "página de la Comisión",
+          "confirmed_on": "2026-10-28"
+        },
+        {
+          "kind": "address",
+          "label": "Dirección",
+          "value": "Paseo Alejandro Cervantes Delgado 36, 3.er piso, Col. Ampliación Universal, C.P. 39080, Chilpancingo de los Bravo, Guerrero",
+          "source": "guerrero-cebp",
+          "locator": "página de la Comisión",
+          "confirmed_on": "2026-10-28"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "reviewed_by": "Proyecto Encuéntralos (revisión de fuentes primarias)",
+        "last_reviewed": "2026-10-28",
+        "notes": "Contacts read on the official state page on 2026-10-28. Recheck before each release."
+      }
+    }
+  ]
+}

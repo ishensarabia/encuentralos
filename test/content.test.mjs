@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { loadContent, validateContent, selectPublishable, summarize } from '../scripts/lib/content.mjs';
 
 const contentRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'content');
-const TODAY = '2026-10-01';
+const TODAY = '2026-10-28';
 
 // Smallest valid content: one read source, one checklist item, one state with one agency.
 function fixture() {

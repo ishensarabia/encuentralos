@@ -13,7 +13,7 @@ import { renderSite } from '../scripts/lib/render.mjs';
 
 const repo = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceTexts = path.join(repo, 'docs', 'source-texts');
-const TODAY = '2026-10-01';
+const TODAY = '2026-10-28';
 const full = {
   ciudad: 'Guadalajara, Jalisco', destinatario: 'Comisión de Búsqueda de Personas del Estado de Jalisco',
   nombre: 'Ana Pérez', parentesco: 'madre', telefono: '33 1234 5678', correo: '', domicilio: '',
@@ -44,7 +44,7 @@ test('every document only uses fields and articles that exist, and quotes only f
 test('the report names the person, asks for the folio and quotes the law', () => {
   const { text, missing } = build('reporte');
   assert.deepEqual(missing, []);
-  assert.match(text, /^Guadalajara, Jalisco, a 1 de octubre de 2026/);
+  assert.match(text, /^Guadalajara, Jalisco, a 28 de octubre de 2026/);
   assert.match(text, /Yo, Ana Pérez, madre de Luis Gómez/);
   assert.match(text, /28 de septiembre de 2026 en Zapopan/);
   assert.match(text, /folio único de búsqueda/);
