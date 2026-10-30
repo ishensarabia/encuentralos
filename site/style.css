@@ -98,6 +98,10 @@ footer.site nav a { display: inline-block; min-height: 44px; line-height: 44px; 
 .guide label { display: flex; align-items: center; gap: .6rem; min-height: 44px; }
 .guide input[type=radio] { width: 1.3rem; height: 1.3rem; accent-color: var(--accent); flex: none; }
 .guide .skip-option { color: var(--muted); font-size: .95rem; }
+.guide .field { margin: 1rem 0; }
+.guide .field label { display: block; font-weight: 700; margin-bottom: .4rem; }
+.guide select { width: 100%; min-height: 48px; font: inherit; padding: .4rem .6rem; border: 1px solid var(--line); border-radius: .5rem; background: var(--bg); color: inherit; }
+.cards.tools span { display: block; margin-top: .25rem; font-weight: 400; font-size: .95rem; color: var(--muted); }
 button { font: inherit; cursor: pointer; }
 .guide button.call { border: 0; width: 100%; }
 #guia-reiniciar { min-height: 44px; padding: .5rem 1rem; border: 2px solid var(--accent); border-radius: .5rem; background: transparent; color: var(--accent); font-weight: 700; }

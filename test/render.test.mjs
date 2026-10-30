@@ -101,7 +101,12 @@ test('preview of the real content includes the guided questions and the "no te r
   assert.ok(guide, 'que-hago.html missing');
   assert.match(guide, /<script src="guia\.js" defer>/);
   assert.match(guide, /id="guia-datos"/);
-  assert.match(guide, /name="estado" value="jalisco"/);
+  // Every state is offered, including ones without a page yet, and the tools are linked.
+  assert.equal((guide.match(/<option value="[a-z-]+">/g) ?? []).length, 32);
+  assert.match(guide, /<option value="jalisco">/);
+  assert.match(guide, /<option value="nuevo-leon">/);
+  assert.match(guide, /href="ficha\.html"/);
+  assert.match(guide, /href="escritos\.html"/);
   assert.match(guide, /data-key="item:no-esperes"/);
   const sheet = pages.get('si-no-te-reciben.html');
   assert.ok(sheet, 'si-no-te-reciben.html missing');

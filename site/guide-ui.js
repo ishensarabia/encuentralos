@@ -18,7 +18,7 @@ if (form && dataEl) {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     var answers = {};
-    var inputs = form.querySelectorAll('input[type=radio]:checked');
+    var inputs = form.querySelectorAll('input[type=radio]:checked, select');
     for (var j = 0; j < inputs.length; j++) answers[inputs[j].name] = inputs[j].value;
 
     var keys = selectSteps({ steps: data.steps }, answers, data.stateItems);
@@ -29,7 +29,8 @@ if (form && dataEl) {
       list.appendChild(card); // re-append in the order the steps apply
       card.hidden = false;
     }
-    otherState.hidden = answers.estado !== 'otro';
+    // A state was chosen but the guide has no page for it yet: say the national channels apply.
+    otherState.hidden = !answers.estado || !!data.stateItems[answers.estado];
     results.hidden = false;
     title.focus();
     title.scrollIntoView();

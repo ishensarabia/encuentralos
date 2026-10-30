@@ -65,7 +65,7 @@ export const T = {
   guideCta: 'Responde unas preguntas y te decimos qué hacer',
   guideDescription: 'Responde unas preguntas y ve los pasos que aplican a tu caso. Tus respuestas no se guardan.',
   guideNoJs: 'Estas preguntas necesitan que tu navegador tenga JavaScript activado. Mientras tanto, puedes ver todos los pasos en',
-  guideStateOther: 'Otro estado',
+  guideToolsTitle: 'Herramientas que te pueden ayudar',
   guideSkip: 'No sé / prefiero no responder',
   guideSubmit: 'Ver mis pasos',
   guideReset: 'Empezar de nuevo',

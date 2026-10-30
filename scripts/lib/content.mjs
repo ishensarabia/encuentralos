@@ -5,6 +5,9 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { normalizeName } from './normalize.mjs';
+import { ALL_STATES } from '../../site/states.mjs';
+
+const ALL_STATE_IDS = new Set(ALL_STATES.map((s) => s.id));
 
 export const VERIFICATION = ['primary', 'secondary', 'unconfirmed'];
 export const REVIEW_STATUS = ['unreviewed', 'needs_changes', 'approved', 'rejected'];
@@ -225,6 +228,7 @@ export function validateContent(content, { today = new Date().toISOString().slic
     if (!ID.test(state?.id ?? '')) err(where, 'state.id must be lowercase-kebab-case');
     else if (stateIds.has(state.id)) err(where, `duplicate state id "${state.id}"`);
     else stateIds.add(state.id);
+    if (ID.test(state?.id ?? '') && !ALL_STATE_IDS.has(state.id)) err(where, `state.id "${state.id}" is not in site/states.mjs`);
     if (path.basename(file, '.json') !== state?.id) err(where, `file name must match state.id "${state?.id}"`);
     if (!isText(state?.name)) err(where, 'state.name is required');
     if (isObject(state)) {
@@ -265,7 +269,7 @@ export function validateContent(content, { today = new Date().toISOString().slic
       if (!isText(q.text)) err(at, 'text is required');
       if (q.options === 'states') {
         if (q.id !== 'estado') err(at, 'only the "estado" question can use "states" options');
-        options.set(q.id, new Set([...stateIds, 'otro']));
+        options.set(q.id, new Set([...ALL_STATE_IDS, ...stateIds, 'otro']));
       } else if (Array.isArray(q.options) && q.options.length >= 2) {
         const ids = new Set();
         for (const o of q.options) {

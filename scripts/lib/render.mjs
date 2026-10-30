@@ -5,6 +5,7 @@
 import { SITE, HOME_ITEMS, REQUIRED_PUBLIC_ITEMS, PAGES, GUIDE_PAGE, PHASE_TITLES, T } from '../../site/strings.mjs';
 import { PHASES, summarize } from './content.mjs';
 import { FICHA_PAGE, ESCRITOS_PAGE } from '../../site/tools.mjs';
+import { ALL_STATES } from '../../site/states.mjs';
 import { renderFichaBody, renderEscritosBody } from './tools-render.mjs';
 
 const ENTITIES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
@@ -114,6 +115,10 @@ function renderItem(item, ctx, { anchor = true } = {}) {
   return out.join('\n');
 }
 
+// The flyer and document makers, with a line each on what they do. Shown on the home page
+// and under the guided questions' results.
+const toolCards = `<ul class="cards tools">${[FICHA_PAGE, ESCRITOS_PAGE].map((p) => `<li><a href="${esc(p.file)}">${esc(p.nav)}<span>${esc(p.description)}</span></a></li>`).join('')}</ul>`;
+
 const cards = (links) => `<ul class="cards">${links.map((l) => `<li><a href="${esc(l.file)}">${esc(l.label)}</a></li>`).join('')}</ul>`;
 
 // Guided questions: a form, plus every possible result pre-rendered and hidden.
@@ -129,11 +134,16 @@ function renderGuide(guide, { ctx, itemsById, statePages, sectionPages }) {
 
   out.push('<form id="guia-form" class="guide" autocomplete="off" hidden>');
   for (const q of guide.questions) {
-    const options = q.options === 'states'
-      ? [...statePages.map((s) => ({ id: s.state.id, label: s.state.name })), { id: 'otro', label: T.guideStateOther }]
-      : q.options;
+    if (q.options === 'states') {
+      // All 32 states, whether or not the guide has a page for them yet.
+      out.push(`<div class="field"><label for="guia-${esc(q.id)}">${esc(q.text)}</label>`);
+      out.push(`<select id="guia-${esc(q.id)}" name="${esc(q.id)}"><option value="">${esc(T.guideSkip)}</option>`);
+      for (const s of ALL_STATES) out.push(`<option value="${esc(s.id)}">${esc(s.name)}</option>`);
+      out.push('</select></div>');
+      continue;
+    }
     out.push(`<fieldset><legend>${esc(q.text)}</legend>`);
-    for (const o of options) {
+    for (const o of q.options) {
       out.push(`<label><input type="radio" name="${esc(q.id)}" value="${esc(o.id)}"> ${esc(o.label)}</label>`);
     }
     out.push(`<label class="skip-option"><input type="radio" name="${esc(q.id)}" value="" checked> ${esc(T.guideSkip)}</label>`);
@@ -161,6 +171,8 @@ function renderGuide(guide, { ctx, itemsById, statePages, sectionPages }) {
   }
   out.push('</div>');
   if (checklist) out.push(`<p>${esc(T.guideResultsNote)} <a href="${esc(checklist.file)}">${esc(checklist.nav)}</a>.</p>`);
+  out.push(`<h2>${esc(T.guideToolsTitle)}</h2>`);
+  out.push(toolCards);
   out.push(`<p><button type="button" id="guia-reiniciar">${esc(T.guideReset)}</button></p>`, '</section>');
 
   // Data for guia.js. type="application/json" is never executed, so the CSP allows it.
@@ -238,11 +250,13 @@ export function renderSite(content, { mode, css, builtOn }) {
       guide ? `<p><a class="call cta" href="${esc(GUIDE_PAGE.file)}">${esc(T.guideCta)}</a></p>` : '',
       `<h2>${esc(T.homeImportant)}</h2>`,
       ...homeItems.map((i) => renderItem(i, ctx, { anchor: false })),
+      `<h2>${esc(T.guideToolsTitle)}</h2>`,
+      toolCards,
       statePages.length
         ? `<h2>${esc(T.homeStates)}</h2>\n${cards(statePages.map((s) => ({ file: s.file, label: s.state.name })))}\n<p>${esc(T.homeStatesMissing)}</p>`
         : '',
       `<h2>${esc(T.homeMore)}</h2>`,
-      cards([...sectionPages.map((p) => ({ file: p.file, label: p.nav })), { file: FICHA_PAGE.file, label: FICHA_PAGE.nav }, { file: ESCRITOS_PAGE.file, label: ESCRITOS_PAGE.nav }]),
+      cards(sectionPages.map((p) => ({ file: p.file, label: p.nav }))),
     ].join('\n'),
   }));
 
