@@ -7,6 +7,7 @@ import { PHASES, summarize } from './content.mjs';
 import { FICHA_PAGE, ESCRITOS_PAGE } from '../../site/tools.mjs';
 import { ALL_STATES } from '../../site/states.mjs';
 import { renderFichaBody, renderEscritosBody } from './tools-render.mjs';
+import { ICONS, PAGE_ICON } from './icons.mjs';
 
 const ENTITIES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 export const esc = (value) => String(value).replace(/[&<>"']/g, (c) => ENTITIES[c]);
@@ -32,8 +33,24 @@ export function telHref(value) {
 // Only our own files may load: no third-party scripts, styles, fonts or trackers.
 const CSP = "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' blob:; manifest-src 'self'; worker-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'";
 
-function layout({ mode, title, description, body, bodyClass = '', nav, css, footerExtra = '', scripts = [] }) {
+const navLink = (n, file) => `<a href="${esc(n.file)}"${n.file === file ? ' aria-current="page"' : ''}>`;
+
+// Header: name plus a menu that works without JavaScript (<details>). Bottom bar: the four
+// places a person in a hurry needs, always one tap away on a phone.
+function renderHeader(nav, file) {
+  const items = nav.map((n) => `<li>${navLink(n, file)}${ICONS[n.icon] ?? ''}<span>${esc(n.label)}</span></a></li>`).join('');
+  return `<header class="site"><div class="wrap bar"><a class="brand" href="index.html"${file === 'index.html' ? ' aria-current="page"' : ''}><img src="icon.svg" alt="" width="32" height="32"><span>${esc(SITE.name)}</span></a>
+<details class="menu"><summary>${ICONS.menu}<span>${esc(T.menu)}</span></summary><nav aria-label="${esc(T.menuLabel)}"><ul>${items}</ul></nav></details></div></header>`;
+}
+
+function renderTabbar(nav, file) {
+  const tabs = nav.filter((n) => n.tab);
+  return `<nav class="tabbar" aria-label="${esc(T.tabsLabel)}"><ul>${tabs.map((n) => `<li>${navLink(n, file)}${ICONS[n.icon] ?? ''}<span>${esc(n.tab)}</span></a></li>`).join('')}</ul></nav>`;
+}
+
+function layout({ mode, title, description, body, bodyClass = '', nav, css, footerExtra = '', scripts = [], file = '' }) {
   const fullTitle = title === SITE.name ? SITE.name : `${title} · ${SITE.name}`;
+  const back = file && file !== 'index.html' ? `<p class="back"><a href="index.html">${ICONS.back}<span>${esc(T.backHome)}</span></a></p>\n` : '';
   const scriptTags = ['app.js', ...scripts].map((s) => `<script src="${esc(s)}" defer></script>`).join('\n');
   return `<!doctype html>
 <html lang="es-MX">
@@ -57,14 +74,15 @@ ${scriptTags}
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ''}>
 <a class="skip" href="#main">${esc(T.skipLink)}</a>
-${mode === 'preview' ? `<p class="flag" role="alert">${esc(T.previewBanner)}</p>\n` : ''}<header class="site"><div class="wrap"><a href="index.html">${esc(SITE.name)}</a></div></header>
+${mode === 'preview' ? `<p class="flag" role="alert">${esc(T.previewBanner)}</p>\n` : ''}${renderHeader(nav, file)}
 <main id="main" class="wrap">
-${body}
+${back}${body}
 </main>
 <footer class="site"><div class="wrap">
 <nav aria-label="Secciones"><ul>${nav.map((n) => `<li><a href="${esc(n.file)}">${esc(n.label)}</a></li>`).join('')}</ul></nav>
 <p>${esc(T.footerPrivacy)} ${esc(T.footerNotLegal)}</p>
 ${footerExtra}</div></footer>
+${renderTabbar(nav, file)}
 </body>
 </html>
 `;
@@ -72,7 +90,7 @@ ${footerExtra}</div></footer>
 
 function renderContact(c, mode) {
   let value;
-  if (c.kind === 'phone') value = `<a class="call" href="${esc(telHref(c.value))}">${esc(c.value)}</a>`;
+  if (c.kind === 'phone') value = `<a class="call" href="${esc(telHref(c.value))}">${ICONS.phone}${esc(c.value)}</a>`;
   else if (c.kind === 'web') value = `<a href="${esc(c.value)}" rel="noopener noreferrer">${esc(c.value.replace(/^https:\/\//, ''))}</a>`;
   else if (c.kind === 'email') value = `<a href="mailto:${esc(c.value)}">${esc(c.value)}</a>`;
   else value = esc(c.value); // whatsapp, address: shown as text
@@ -117,9 +135,10 @@ function renderItem(item, ctx, { anchor = true } = {}) {
 
 // The flyer and document makers, with a line each on what they do. Shown on the home page
 // and under the guided questions' results.
-const toolCards = `<ul class="cards tools">${[FICHA_PAGE, ESCRITOS_PAGE].map((p) => `<li><a href="${esc(p.file)}">${esc(p.nav)}<span>${esc(p.description)}</span></a></li>`).join('')}</ul>`;
+const toolCards = `<ul class="cards tools">${[[FICHA_PAGE, 'ficha'], [ESCRITOS_PAGE, 'escritos']].map(([p, key]) => `<li><a href="${esc(p.file)}">${ICONS[PAGE_ICON[key]]}<strong>${esc(p.nav)}</strong><span>${esc(p.description)}</span></a></li>`).join('')}</ul>`;
 
-const cards = (links) => `<ul class="cards">${links.map((l) => `<li><a href="${esc(l.file)}">${esc(l.label)}</a></li>`).join('')}</ul>`;
+// Link cards. `icon` is optional; `hint` is a one-line description under the label.
+const cards = (links, cls = '') => `<ul class="cards${cls ? ` ${cls}` : ''}">${links.map((l) => `<li><a href="${esc(l.file)}">${l.icon ? ICONS[l.icon] : ''}<strong>${esc(l.label)}</strong>${l.hint ? `<span>${esc(l.hint)}</span>` : ''}</a></li>`).join('')}</ul>`;
 
 // Guided questions: a form, plus every possible result pre-rendered and hidden.
 // guia.js shows and orders the ones that apply. Without JavaScript, a link to the full list.
@@ -221,70 +240,82 @@ export function renderSite(content, { mode, css, builtOn }) {
 
   const ctx = { mode, sourcesById, itemPage };
   const nav = [
-    { file: 'index.html', label: T.homeNav },
-    ...(guide ? [{ file: GUIDE_PAGE.file, label: GUIDE_PAGE.nav }] : []),
-    ...sectionPages.map((p) => ({ file: p.file, label: p.nav })),
-    { file: FICHA_PAGE.file, label: FICHA_PAGE.nav },
-    { file: ESCRITOS_PAGE.file, label: ESCRITOS_PAGE.nav },
-    { file: 'fuentes.html', label: T.sourcesNav },
-    { file: 'acerca.html', label: T.aboutNav },
+    { file: 'index.html', label: T.homeNav, icon: 'home', tab: T.tabs.home },
+    ...(guide ? [{ file: GUIDE_PAGE.file, label: GUIDE_PAGE.nav, icon: PAGE_ICON.guide, tab: T.tabs.guide }] : []),
+    ...sectionPages.map((p) => ({ file: p.file, label: p.nav, icon: PAGE_ICON[p.section.id], tab: p.section.id === 'checklist' ? T.tabs.steps : undefined })),
+    { file: FICHA_PAGE.file, label: FICHA_PAGE.nav, icon: PAGE_ICON.ficha, tab: T.tabs.ficha },
+    { file: ESCRITOS_PAGE.file, label: ESCRITOS_PAGE.nav, icon: PAGE_ICON.escritos },
+    { file: 'fuentes.html', label: T.sourcesNav, icon: PAGE_ICON.fuentes },
+    { file: 'acerca.html', label: T.aboutNav, icon: PAGE_ICON.acerca },
   ];
   const stats = summarize(content);
   const footerExtra = [
     `<p>${esc(T.builtOn(formatDate(builtOn)))}</p>`,
     mode === 'preview' ? `<p>${esc(T.previewCounts(stats))}</p>` : '',
   ].join('\n');
-  const page = (opts) => layout({ mode, nav, css, footerExtra, ...opts });
-
   const pages = new Map();
+  // Every page is registered through here so the layout knows which nav entry is current.
+  const add = (file, opts) => pages.set(file, layout({ mode, nav, css, footerExtra, file, ...opts }));
 
   // Home
   const homeItems = HOME_ITEMS.map((id) => itemsById.get(id)).filter(Boolean);
-  pages.set('index.html', page({
+  // Order of the home page: reassure, one big next step, the urgent facts, then the rest.
+  // "Start here" is the guided questions, or the step-by-step page when there are none.
+  const stepsPage = sectionPages.find((p) => p.section.id === 'checklist');
+  const startHere = guide ? { file: GUIDE_PAGE.file, text: T.guideCta } : stepsPage ? { file: stepsPage.file, text: stepsPage.nav } : null;
+  const quick = [
+    stepsPage && guide ? { file: stepsPage.file, label: stepsPage.nav, hint: T.quickStepsHint, icon: PAGE_ICON.checklist } : null,
+    { file: FICHA_PAGE.file, label: FICHA_PAGE.nav, hint: T.quickFichaHint, icon: PAGE_ICON.ficha },
+    sectionPages.find((p) => p.section.id === 'rechazo') ? { file: sectionPages.find((p) => p.section.id === 'rechazo').file, label: sectionPages.find((p) => p.section.id === 'rechazo').nav, hint: T.quickRechazoHint, icon: PAGE_ICON.rechazo } : null,
+    sectionPages.find((p) => p.section.id === 'instituciones') ? { file: sectionPages.find((p) => p.section.id === 'instituciones').file, label: sectionPages.find((p) => p.section.id === 'instituciones').nav, hint: T.quickInstHint, icon: PAGE_ICON.instituciones } : null,
+  ].filter(Boolean);
+  add('index.html', {
     title: SITE.name,
     description: SITE.description,
     bodyClass: 'home',
     body: [
-      `<h1>${esc(T.homeTitle)}</h1>`,
-      `<p class="lead">${esc(T.homeLead)}</p>`,
-      guide ? `<p><a class="call cta" href="${esc(GUIDE_PAGE.file)}">${esc(T.guideCta)}</a></p>` : '',
+      `<section class="hero"><h1>${esc(T.homeTitle)}</h1><p class="lead">${esc(T.homeLead)}</p>`,
+      startHere ? `<p><a class="call cta big" href="${esc(startHere.file)}">${esc(startHere.text)}${ICONS.arrow}</a></p>` : '',
+      `<p class="reassure">${esc(T.homeReassure)}</p></section>`,
+      `<h2>${esc(T.homeQuick)}</h2>`,
+      cards(quick, 'quick'),
       `<h2>${esc(T.homeImportant)}</h2>`,
       ...homeItems.map((i) => renderItem(i, ctx, { anchor: false })),
-      `<h2>${esc(T.guideToolsTitle)}</h2>`,
-      toolCards,
       statePages.length
-        ? `<h2>${esc(T.homeStates)}</h2>\n${cards(statePages.map((s) => ({ file: s.file, label: s.state.name })))}\n<p>${esc(T.homeStatesMissing)}</p>`
+        ? `<h2>${esc(T.homeStates)}</h2>\n${cards(statePages.map((s) => ({ file: s.file, label: s.state.name })), 'states')}\n<p>${esc(T.homeStatesMissing)}</p>`
         : '',
       `<h2>${esc(T.homeMore)}</h2>`,
-      cards(sectionPages.map((p) => ({ file: p.file, label: p.nav }))),
+      cards(sectionPages.filter((p) => p.section.id !== 'checklist').map((p) => ({ file: p.file, label: p.nav, hint: p.description, icon: PAGE_ICON[p.section.id] })), 'more'),
+      `<h2>${esc(T.guideToolsTitle)}</h2>`,
+      toolCards,
     ].join('\n'),
-  }));
+  });
 
   // Guided questions
   if (guide) {
-    pages.set(GUIDE_PAGE.file, page({
+    add(GUIDE_PAGE.file, {
       title: guide.title,
       description: T.guideDescription,
       scripts: ['guia.js'],
       body: renderGuide(guide, { ctx, itemsById, statePages, sectionPages }),
-    }));
+    });
   }
 
   // Tools that run on the phone. Without JavaScript they point to the written steps.
   const toolFallback = sectionPages.find((p) => p.section.id === 'documentos') ?? { file: 'index.html', nav: T.homeNav };
-  pages.set(FICHA_PAGE.file, page({
+  add(FICHA_PAGE.file, {
     title: FICHA_PAGE.title,
     description: FICHA_PAGE.description,
     scripts: [FICHA_PAGE.script],
     body: renderFichaBody(toolFallback),
-  }));
-  pages.set(ESCRITOS_PAGE.file, page({
+  });
+  add(ESCRITOS_PAGE.file, {
     title: ESCRITOS_PAGE.title,
     description: ESCRITOS_PAGE.description,
     scripts: [ESCRITOS_PAGE.script],
     bodyClass: 'page-escritos',
     body: renderEscritosBody(sectionPages.find((p) => p.section.id === 'rechazo') ?? { file: 'index.html', nav: T.homeNav }),
-  }));
+  });
 
   // National sections
   for (const p of sectionPages) {
@@ -300,7 +331,7 @@ export function renderSite(content, { mode, css, builtOn }) {
     } else {
       body.push(...p.items.map((i) => renderItem(i, ctx)));
     }
-    pages.set(p.file, page({ title: p.section.title, description: p.description, body: body.join('\n'), bodyClass: `page-${p.section.id}` }));
+    add(p.file, { title: p.section.title, description: p.description, body: body.join('\n'), bodyClass: `page-${p.section.id}` });
   }
 
   // States
@@ -314,7 +345,7 @@ export function renderSite(content, { mode, css, builtOn }) {
     if (nationalLinks.length) {
       body.push(`<p>${esc(T.stateSeeAlso)} ${nationalLinks.map((p) => `<a href="${esc(p.file)}">${esc(p.nav)}</a>`).join(' · ')}.</p>`);
     }
-    pages.set(s.file, page({ title: T.statePageTitle(s.state.name), description: T.stateDescription(s.state.name), body: body.join('\n') }));
+    add(s.file, { title: T.statePageTitle(s.state.name), description: T.stateDescription(s.state.name), body: body.join('\n') });
   }
 
   // Sources
@@ -332,18 +363,18 @@ export function renderSite(content, { mode, css, builtOn }) {
       '</article>',
     ].filter(Boolean).join('\n');
   });
-  pages.set('fuentes.html', page({
+  add('fuentes.html', {
     title: T.sourcesTitle,
     description: T.sourcesDescription,
     body: [`<h1>${esc(T.sourcesTitle)}</h1>`, `<p class="lead">${esc(T.sourcesIntro)}</p>`, ...sourceBlocks].join('\n'),
-  }));
+  });
 
   // About
-  pages.set('acerca.html', page({
+  add('acerca.html', {
     title: T.aboutTitle,
     description: T.aboutDescription,
     body: [`<h1>${esc(T.aboutTitle)}</h1>`, ...T.aboutParagraphs.map((p) => `<p>${esc(p)}</p>`)].join('\n'),
-  }));
+  });
 
   return pages;
 }
