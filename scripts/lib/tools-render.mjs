@@ -40,13 +40,20 @@ export function renderFichaBody(guideLink) {
     `<label class="field" for="f-foto"><span class="field-label">${esc(f.foto)}</span><span class="hint">${esc(X.fichaPhotoHint)}</span><input id="f-foto" name="foto" type="file" accept="image/*"></label>`));
   out.push(group(g.como,
     F('estatura'),
+    F('peso'),
     F('complexion', { options: X.fichaBuildOptions }),
     F('tez', { options: X.fichaSkinOptions }),
     F('cabello'),
+    F('cabello_tipo', { options: X.fichaHairTypeOptions }),
+    F('cabello_largo', { options: X.fichaHairLengthOptions }),
     F('ojos'),
+    F('ojos_tamano', { options: X.fichaEyeSizeOptions }),
+    F('boca', { options: X.fichaMouthOptions }),
+    F('labios', { options: X.fichaLipsOptions }),
+    F('ocupacion'),
     F('senas', { long: true }),
     F('vestimenta', { long: true })));
-  out.push(group(g.cuando, F('fecha', { type: 'date' }), F('hora', { type: 'time' }), F('lugar')));
+  out.push(group(g.cuando, F('fecha', { type: 'date' }), F('hora', { type: 'time' }), F('lugar'), F('hechos', { long: true })));
   out.push(group(g.riesgo, F('vulnerabilidad', { long: true })));
   out.push(group(g.contacto, F('telefono', { type: 'tel' }), F('contacto'), F('folio'), F('extra')));
   out.push(`<fieldset class="choice"><legend>${esc(f.formato)}</legend>`);
@@ -61,7 +68,7 @@ export function renderFichaBody(guideLink) {
   out.push(`<canvas id="ficha-canvas" role="img" aria-label="${esc(X.fichaPreviewLabel)}"></canvas>`);
   out.push(`<p class="actions"><button type="button" id="ficha-descargar" class="call">${esc(X.fichaDownload)}</button> <button type="button" id="ficha-compartir" class="alt" hidden>${esc(X.fichaShare)}</button></p>`);
   out.push('</section>');
-  out.push(dataScript('ficha-datos', { formats: X.fichaFormats, banner: X.fichaTitleBanner, foot: X.fichaFootNote, fields: f, folioLabel: X.fichaFolioLabel, aliasLabel: X.fichaAliasLabel, needName: X.fichaNeedName, example: { values: X.fichaExampleValues, photo: X.fichaExamplePhoto, watermark: X.fichaExampleWatermark } }));
+  out.push(dataScript('ficha-datos', { formats: X.fichaFormats, banner: X.fichaTitleBanner, foot: X.fichaFootNote, fields: f, table: X.fichaTable, issuedLabel: X.fichaIssued, credit: [X.fichaCredit, X.fichaCreditCta + (X.fichaCreditUrl ? ': ' + X.fichaCreditUrl : '')].join('  ·  '), folioLabel: X.fichaFolioLabel, aliasLabel: X.fichaAliasLabel, needName: X.fichaNeedName, example: { values: X.fichaExampleValues, photo: X.fichaExamplePhoto, watermark: X.fichaExampleWatermark } }));
   return out.join('\n');
 }
 
