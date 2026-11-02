@@ -8,9 +8,12 @@ import { FICHA_PAGE, ESCRITOS_PAGE, FUNDAMENTOS, CAMPOS, ESCRITOS, TOOLS_T as X 
 // type="application/json" is never executed, so the CSP allows it.
 const dataScript = (id, data) => `<script type="application/json" id="${id}">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
 
-function field({ id, label, hint, type = 'text', long = false, required = false, prefix, attrs = '' }) {
+function field({ id, label, hint, type = 'text', long = false, required = false, prefix, attrs = '', options }) {
   const name = `${prefix}-${id}`;
-  const control = long
+  // In a select the first option means "not answered", so it sends an empty value.
+  const control = options
+    ? `<select id="${name}" name="${esc(id)}">${options.map((o, i) => `<option value="${i === 0 ? '' : esc(o)}">${esc(o)}</option>`).join('')}</select>`
+    : long
     ? `<textarea id="${name}" name="${esc(id)}" rows="3"${required ? ' required' : ''}${attrs}></textarea>`
     : `<input id="${name}" name="${esc(id)}" type="${type}"${required ? ' required' : ''}${type === 'number' ? ' min="0" max="120" inputmode="numeric"' : ''}${type === 'tel' ? ' inputmode="tel"' : ''} autocomplete="off"${attrs}>`;
   return `<label class="field" for="${name}"><span class="field-label">${esc(label)}</span>${hint ? `<span class="hint">${esc(hint)}</span>` : ''}${control}</label>`;
@@ -21,16 +24,31 @@ export function renderFichaBody(guideLink) {
   const out = [`<h1>${esc(FICHA_PAGE.title)}</h1>`, `<p class="lead">${esc(X.fichaIntro)}</p>`];
   out.push(`<div class="note"><strong>${esc(X.fichaBefore)}</strong><ul>${X.fichaBeforeList.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></div>`);
   out.push(`<p id="ficha-sinjs">${esc(X.fichaNoJs)} <a href="${esc(guideLink.file)}">${esc(guideLink.nav)}</a>.</p>`);
+  // Filled in by ficha-ui.js, so it only shows when the tool itself can run
+  out.push(`<section id="ficha-ejemplo" class="example no-print" hidden><h2>${esc(X.fichaExampleTitle)}</h2><canvas id="ficha-ejemplo-canvas" role="img" aria-label="${esc(X.fichaExampleLabel)}"></canvas><p class="hint">${esc(X.fichaExampleCaption)}</p></section>`);
   out.push('<form id="ficha-form" class="tool no-print" autocomplete="off" hidden>');
-  out.push(field({ id: 'nombre', label: f.nombre, required: true, prefix: 'f' }));
-  out.push(field({ id: 'edad', label: f.edad, type: 'number', prefix: 'f' }));
-  out.push(`<label class="field" for="f-foto"><span class="field-label">${esc(f.foto)}</span><span class="hint">${esc(X.fichaPhotoHint)}</span><input id="f-foto" name="foto" type="file" accept="image/*"></label>`);
-  out.push(field({ id: 'senas', label: f.senas, long: true, prefix: 'f' }));
-  out.push(field({ id: 'vestimenta', label: f.vestimenta, long: true, prefix: 'f' }));
-  out.push(field({ id: 'fecha', label: f.fecha, type: 'date', prefix: 'f' }));
-  out.push(field({ id: 'lugar', label: f.lugar, prefix: 'f' }));
-  out.push(field({ id: 'telefono', label: f.telefono, type: 'tel', prefix: 'f' }));
-  out.push(field({ id: 'extra', label: f.extra, prefix: 'f' }));
+  const h = X.fichaHints;
+  const g = X.fichaGroups;
+  const F = (id, extra = {}) => field({ id, label: f[id], hint: h[id], prefix: 'f', ...extra });
+  const group = (title, ...fields) => `<fieldset class="group"><legend>${esc(title)}</legend>${fields.join('')}</fieldset>`;
+  out.push(`<p class="hint">${esc(X.fichaRequiredNote)}</p>`);
+  out.push(group(g.quien,
+    F('nombre', { required: true }),
+    F('apodo'),
+    F('edad', { type: 'number' }),
+    F('sexo', { options: X.fichaSexOptions }),
+    `<label class="field" for="f-foto"><span class="field-label">${esc(f.foto)}</span><span class="hint">${esc(X.fichaPhotoHint)}</span><input id="f-foto" name="foto" type="file" accept="image/*"></label>`));
+  out.push(group(g.como,
+    F('estatura'),
+    F('complexion', { options: X.fichaBuildOptions }),
+    F('tez', { options: X.fichaSkinOptions }),
+    F('cabello'),
+    F('ojos'),
+    F('senas', { long: true }),
+    F('vestimenta', { long: true })));
+  out.push(group(g.cuando, F('fecha', { type: 'date' }), F('hora', { type: 'time' }), F('lugar')));
+  out.push(group(g.riesgo, F('vulnerabilidad', { long: true })));
+  out.push(group(g.contacto, F('telefono', { type: 'tel' }), F('contacto'), F('folio'), F('extra')));
   out.push(`<fieldset class="choice"><legend>${esc(f.formato)}</legend>`);
   X.fichaFormats.forEach((fmt, i) => {
     out.push(`<label><input type="radio" name="formato" value="${esc(fmt.id)}"${i === 0 ? ' checked' : ''}> ${esc(fmt.label)}</label>`);
@@ -43,7 +61,7 @@ export function renderFichaBody(guideLink) {
   out.push(`<canvas id="ficha-canvas" role="img" aria-label="${esc(X.fichaPreviewLabel)}"></canvas>`);
   out.push(`<p class="actions"><button type="button" id="ficha-descargar" class="call">${esc(X.fichaDownload)}</button> <button type="button" id="ficha-compartir" class="alt" hidden>${esc(X.fichaShare)}</button></p>`);
   out.push('</section>');
-  out.push(dataScript('ficha-datos', { formats: X.fichaFormats, banner: X.fichaTitleBanner, foot: X.fichaFootNote, fields: f, needName: X.fichaNeedName }));
+  out.push(dataScript('ficha-datos', { formats: X.fichaFormats, banner: X.fichaTitleBanner, foot: X.fichaFootNote, fields: f, folioLabel: X.fichaFolioLabel, aliasLabel: X.fichaAliasLabel, needName: X.fichaNeedName, example: { values: X.fichaExampleValues, photo: X.fichaExamplePhoto, watermark: X.fichaExampleWatermark } }));
   return out.join('\n');
 }
 

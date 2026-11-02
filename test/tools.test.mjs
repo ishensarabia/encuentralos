@@ -123,8 +123,13 @@ test('the tool pages are built, linked from the home page, cached for offline us
     guideLogic: await read('scripts', 'lib', 'guide-logic.mjs'), guideUi: await read('site', 'guide-ui.js'),
     appJs: await read('site', 'app.js'), icon: await read('site', 'icon.svg'),
     fichaUi: await read('site', 'ficha-ui.js'), escritosLogic: await read('scripts', 'lib', 'escritos-logic.mjs'), escritosUi: await read('site', 'escritos-ui.js'),
+    examplePhoto: await readFile(path.join(repo, 'site', 'ejemplo-foto.png')),
   });
   assert.ok(assets.has('ficha.js') && assets.has('escritos.js'));
+  // The example flyer needs its stand-in photo offline too, and its page must point to a file that exists
+  assert.ok(Buffer.isBuffer(assets.get('ejemplo-foto.png')));
+  assert.match(assets.get('sw.js'), /ejemplo-foto\.png/);
+  assert.match(pages.get(FICHA_PAGE.file), /id="ficha-ejemplo-canvas"/);
   assert.match(assets.get('sw.js'), /ficha\.html/);
   assert.match(assets.get('sw.js'), /escritos\.js/);
 });

@@ -47,6 +47,7 @@ const assets = buildAssets(pages, {
   escritosLogic: await read('scripts', 'lib', 'escritos-logic.mjs'),
   escritosUi: await read('site', 'escritos-ui.js'),
   icon: await read('site', 'icon.svg'),
+  examplePhoto: await readFile(path.join(repo, 'site', 'ejemplo-foto.png')),
 });
 // Public site should be findable by families; the preview never.
 assets.set('robots.txt', mode === 'public' ? 'User-agent: *\nAllow: /\n' : 'User-agent: *\nDisallow: /\n');

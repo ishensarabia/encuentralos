@@ -212,6 +212,13 @@ button { font: inherit; cursor: pointer; }
   width: 100%; min-height: 48px; margin-top: .35rem; padding: .55rem .7rem; font: inherit;
   color: var(--fg); background: var(--surface); border: 1px solid var(--muted); border-radius: .6rem;
 }
+.tool input[type=time], .tool select {
+  width: 100%; min-height: 48px; margin-top: .35rem; padding: .55rem .7rem; font: inherit;
+  color: var(--fg); background: var(--surface); border: 1px solid var(--muted); border-radius: .6rem;
+}
+.example canvas { display: block; width: 100%; max-width: 420px; height: auto; margin: .5rem auto; border: 1px solid var(--line); border-radius: .5rem; }
+.tool .group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 1.25rem 0; padding: .25rem 1rem 1rem; }
+.tool .group legend { font-weight: 800; font-size: 1.1rem; padding: 0 .35rem; }
 .tool input[type=file] { display: block; margin-top: .35rem; max-width: 100%; }
 .tool .choice { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 1rem 0; padding: .5rem 1rem 1rem; }
 .tool .choice legend { font-weight: 700; padding: 0 .25rem; }

@@ -73,10 +73,14 @@ self.addEventListener('fetch', function (event) {
 }
 
 // pages: Map<file, html> from renderSite. Returns the extra files to write.
-export function buildAssets(pages, { guideLogic, guideUi, appJs, icon, fichaUi, escritosLogic, escritosUi }) {
+export function buildAssets(pages, { guideLogic, guideUi, appJs, icon, fichaUi, escritosLogic, escritosUi, examplePhoto }) {
   const assets = new Map();
   if (pages.has('que-hago.html')) assets.set('guia.js', bundleGuideScript(guideLogic, guideUi));
-  if (pages.has('ficha.html')) assets.set('ficha.js', fichaUi);
+  if (pages.has('ficha.html')) {
+    assets.set('ficha.js', fichaUi);
+    // Stand-in photo for the example flyer (a Buffer: the only binary file of the site)
+    if (examplePhoto) assets.set('ejemplo-foto.png', examplePhoto);
+  }
   if (pages.has('escritos.html')) assets.set('escritos.js', bundleGuideScript(escritosLogic, escritosUi));
   assets.set('app.js', appJs);
   assets.set('icon.svg', icon);
