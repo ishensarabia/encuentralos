@@ -229,7 +229,7 @@ export const TOOLS_T = {
   // Put the public address of the site in fichaCreditUrl (for example 'encuentralos.example') once it is live.
   fichaCredit: 'Hecha con Encuéntralos',
   fichaCreditCta: 'Crea la tuya, gratis',
-  fichaCreditUrl: '',
+  fichaCreditUrl: 'encuentralos.ishdev.workers.dev',
   fichaSkinOptions: ['', 'Clara', 'Morena clara', 'Morena', 'Morena oscura'],
   fichaRequiredNote: 'Solo el nombre es obligatorio. Llena lo que sepas: mientras más datos, más fácil es que alguien reconozca a la persona.',
   fichaExampleTitle: 'Así queda una ficha terminada',
